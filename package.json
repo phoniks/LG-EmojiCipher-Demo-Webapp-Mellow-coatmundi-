@@ -1,0 +1,30 @@
+{
+  "name": "emoji-cipher-mellow-coatimundi",
+  "version": "1.0.0",
+  "description": "A way to show off our work with lg-emoji-mellow-coatimundi.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js",
+    "prestart": "babel src --out-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phoniks/LG-EmojiCipher-Demo-Webapp-Mellow-coatmundi-.git"
+  },
+  "author": "John Hopkins & Mihai Banulescu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phoniks/LG-EmojiCipher-Demo-Webapp-Mellow-coatmundi-/issues"
+  },
+  "homepage": "https://github.com/phoniks/LG-EmojiCipher-Demo-Webapp-Mellow-coatmundi-#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
+    "nodemon": "^1.9.2"
+  }
+}
