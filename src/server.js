@@ -1,19 +1,23 @@
-const express = require('express')  
-const app = express()  
+const express = require('express')
+const app = express()
 const port = 3000
+import { encode } from 'lg-emoji-mellow-coatimundi'
 
+let path = require('path')
 
 app.get('/', (request, response) => {
-  let path = require('path')
-  response.sendFile(path.join(__dirname,'/views/index.html'))
-  
+  response.sendFile(path.join(__dirname, '/views/index.html'))
+})
+
+app.get('/temp', (request, response) => {
+  response.end(encode('hello'))
 })
 
 app.use(
-  "/public", express.static(__dirname + "/public")
+  '/public', express.static(path.join(__dirname, '/public'))
 )
 
-app.listen(port, (err) => {  
+app.listen(port, (err) => {
   if (err) {
     return console.log('something bad happened', err)
   }
