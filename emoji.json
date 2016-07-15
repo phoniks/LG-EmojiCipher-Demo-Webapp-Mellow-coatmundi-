@@ -1,0 +1,827 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class=" is-copy-enabled emoji-size-boost is-u2f-enabled">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-0dd18d999f1e3d1e515cf15c5628a70a3859d1af1c5daadeaa73ab4adfdeae9e.css" integrity="sha256-DdGNmZ8ePR5RXPFcViinCjhZ0a8cXareqnOrSt/erp4=" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-fb8452674a56e3d1599623bdecd81d93ae43dec6c26dbb4fa566d279a99844fd.css" integrity="sha256-+4RSZ0pW49FZliO97Ngdk65D3sbCbbtPpWbSeamYRP0=" media="all" rel="stylesheet" />
+    
+    
+    
+    
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/system-fonts-d60dee4b68e3a38b01c0389551a0e38f04acd897ec85592f405d045ee853b3d1.css" integrity="sha256-1g3uS2jjo4sBwDiVUaDjjwSs2JfshVkvQF0EXuhTs9E=" media="all" rel="stylesheet" />
+
+    <link as="script" href="https://assets-cdn.github.com/assets/frameworks-149d9338c2665172870825c78fa48fdcca4d431d067cbf5fda7120d9e39cc738.js" rel="preload" />
+    
+    <link as="script" href="https://assets-cdn.github.com/assets/github-f004f70daf69296b10d34319b72eac02be9310011804f678498d69e5b53957eb.js" rel="preload" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width">
+    
+    
+    <title>node-emoji/emoji.json at master · omnidan/node-emoji</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="https://avatars2.githubusercontent.com/u/668674?v=3&amp;s=400" name="twitter:image:src" /><meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="omnidan/node-emoji" name="twitter:title" /><meta content="node-emoji - :smirk: simple emoji support for node.js projects" name="twitter:description" />
+      <meta content="https://avatars2.githubusercontent.com/u/668674?v=3&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="omnidan/node-emoji" property="og:title" /><meta content="https://github.com/omnidan/node-emoji" property="og:url" /><meta content="node-emoji - :smirk: simple emoji support for node.js projects" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="web-socket" href="wss://live.github.com/_sockets/MjMwOTE1ODo2ODkzZDJlN2I5ODliOWZmZDkxM2Y5ZWU4ZjE1NWVlMjoxODA3N2EyNGI3ZmI5OTFhMjNmMGEwNDAxNmMwZTgwMGMzZDY4ZTIyYTllY2U5ZjYxN2Y1NmNiZmFiMDcxYzc0--4f36a06f6328ce6ef3698c401371bc749dcf7384">
+    <meta name="pjax-timeout" content="1000">
+    <link rel="sudo-modal" href="/sessions/sudo_modal">
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="D0421852:70F9:134CAF1:5788104C" name="octolytics-dimension-request_id" /><meta content="2309158" name="octolytics-actor-id" /><meta content="bluemihai" name="octolytics-actor-login" /><meta content="c584e714a7745fc3e2785c6aa3292deb609306a5c29bc529bd884df0c1ca683d" name="octolytics-actor-hash" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="bluemihai">
+
+        <meta name="expected-hostname" content="github.com">
+      <meta name="js-proxy-site-detection-payload" content="ZjYzMDQxN2Y3ZDI0M2Y1ODU5ZWE2OWMzNjAwYmJkNGFmZTE0YTE5MzE1MTA2MWQyMjNlNGFmNmQyZWEyMzEwYnx7InJlbW90ZV9hZGRyZXNzIjoiMjA4LjY2LjI0LjgyIiwicmVxdWVzdF9pZCI6IkQwNDIxODUyOjcwRjk6MTM0Q0FGMTo1Nzg4MTA0QyIsInRpbWVzdGFtcCI6MTQ2ODUzNDg2MH0=">
+
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta name="html-safe-nonce" content="e1e25fee483e96623e99c0bb10085933bc984bdc">
+    <meta content="683bd80276c5868e0b2b7a19efdb363372f8e678" name="form-nonce" />
+
+    <meta http-equiv="x-pjax-version" content="cbbbff3f3cdf5b3451660f63aa771aea">
+    
+
+      
+  <meta name="description" content="node-emoji - :smirk: simple emoji support for node.js projects">
+  <meta name="go-import" content="github.com/omnidan/node-emoji git https://github.com/omnidan/node-emoji.git">
+
+  <meta content="668674" name="octolytics-dimension-user_id" /><meta content="omnidan" name="octolytics-dimension-user_login" /><meta content="22914463" name="octolytics-dimension-repository_id" /><meta content="omnidan/node-emoji" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="22914463" name="octolytics-dimension-repository_network_root_id" /><meta content="omnidan/node-emoji" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/omnidan/node-emoji/commits/master.atom" rel="alternate" title="Recent Commits to node-emoji:master" type="application/atom+xml">
+
+
+      <link rel="canonical" href="https://github.com/omnidan/node-emoji/blob/master/lib/emoji.json" data-pjax-transient>
+  </head>
+
+
+  <body class="logged-in   env-production macintosh vis-public page-blob">
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"></div>
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+        <div class="header header-logged-in true" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg aria-hidden="true" class="octicon octicon-mark-github" height="28" version="1.1" viewBox="0 0 16 16" width="28"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+
+
+        <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/omnidan/node-emoji/search" class="js-site-search-form" data-scoped-search-url="/omnidan/node-emoji/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+      <div class="header-search-scope">This repository</div>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        tabindex="1"
+        autocapitalize="off">
+    </label>
+</form></div>
+
+
+      <ul class="header-nav left" role="navigation">
+        <li class="header-nav-item">
+          <a href="/pulls" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:pulls context:user" data-hotkey="g p" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls">
+            Pull requests
+</a>        </li>
+        <li class="header-nav-item">
+          <a href="/issues" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:issues context:user" data-hotkey="g i" data-selected-links="/issues /issues/assigned /issues/mentioned /issues">
+            Issues
+</a>        </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://gist.github.com/" data-ga-click="Header, go to gist, text:gist">Gist</a>
+          </li>
+      </ul>
+
+    
+<ul class="header-nav user-nav right" id="user-links">
+  <li class="header-nav-item">
+    
+    <a href="/notifications" aria-label="You have unread notifications" class="header-nav-link notification-indicator tooltipped tooltipped-s js-socket-channel js-notification-indicator" data-channel="tenant:1:notification-changed:2309158" data-ga-click="Header, go to notifications, icon:unread" data-hotkey="g n">
+        <span class="mail-status unread"></span>
+        <svg aria-hidden="true" class="octicon octicon-bell" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"></path></svg>
+</a>
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link tooltipped tooltipped-s js-menu-target" href="/new"
+       aria-label="Create new…"
+       data-ga-click="Header, create new, icon:add">
+      <svg aria-hidden="true" class="octicon octicon-plus left" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 9H7v5H5V9H0V7h5V2h2v5h5z"></path></svg>
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      <ul class="dropdown-menu dropdown-menu-sw">
+        
+<a class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a class="dropdown-item" href="/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+
+  <a class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="omnidan/node-emoji">This repository</span>
+  </div>
+    <a class="dropdown-item" href="/omnidan/node-emoji/issues/new" data-ga-click="Header, create new issue">
+      New issue
+    </a>
+
+      </ul>
+    </div>
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link name tooltipped tooltipped-sw js-menu-target" href="/bluemihai"
+       aria-label="View profile and more"
+       data-ga-click="Header, show menu, icon:avatar">
+      <img alt="@bluemihai" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/2309158?v=3&amp;s=40" width="20" />
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      <div class="dropdown-menu dropdown-menu-sw">
+        <div class="dropdown-header header-nav-current-user css-truncate">
+          Signed in as <strong class="css-truncate-target">bluemihai</strong>
+        </div>
+
+        <div class="dropdown-divider"></div>
+
+        <a class="dropdown-item" href="/bluemihai" data-ga-click="Header, go to profile, text:your profile">
+          Your profile
+        </a>
+        <a class="dropdown-item" href="/stars" data-ga-click="Header, go to starred repos, text:your stars">
+          Your stars
+        </a>
+        <a class="dropdown-item" href="/explore" data-ga-click="Header, go to explore, text:explore">
+          Explore
+        </a>
+          <a class="dropdown-item" href="/integrations" data-ga-click="Header, go to integrations, text:integrations">
+            Integrations
+          </a>
+        <a class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">
+          Help
+        </a>
+
+
+        <div class="dropdown-divider"></div>
+
+        <a class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">
+          Settings
+        </a>
+
+        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/logout" class="logout-form" data-form-nonce="683bd80276c5868e0b2b7a19efdb363372f8e678" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="BvwbH9FOwo2lDG0dcPqooMK8ymEOIQvnxfegOsHHz7o91xxOg72Rf6gThyS+vFoz5KOLCQt4itoSbQ+vbZOmiw==" /></div>
+          <button class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+</form>      </div>
+    </div>
+  </li>
+</ul>
+
+
+    
+  </div>
+</div>
+
+
+      
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+      <div id="js-flash-container">
+</div>
+
+
+    <div role="main">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container>
+      
+<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+  <div class="container repohead-details-container">
+
+    
+
+<ul class="pagehead-actions">
+
+  <li>
+        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-form-nonce="683bd80276c5868e0b2b7a19efdb363372f8e678" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="S38/CPlfwt7aHlus6fMYO9NV+PsJwp4hzSbDpysZ+z4z+yGD6R5JbItxLOogJ49lD/VN+BBLjk93bxiCCiKmww==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="22914463" />
+
+        <div class="select-menu js-menu-container js-select-menu">
+          <a href="/omnidan/node-emoji/subscription"
+            class="btn btn-sm btn-with-count select-menu-button js-menu-target" role="button" tabindex="0" aria-haspopup="true"
+            data-ga-click="Repository, click Watch settings, action:blob#show">
+            <span class="js-select-button">
+              <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+              Watch
+            </span>
+          </a>
+          <a class="social-count js-social-count" href="/omnidan/node-emoji/watchers">
+            2
+          </a>
+
+        <div class="select-menu-modal-holder">
+          <div class="select-menu-modal subscription-menu-modal js-menu-content" aria-hidden="true">
+            <div class="select-menu-header js-navigation-enable" tabindex="-1">
+              <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+              <span class="select-menu-title">Notifications</span>
+            </div>
+
+              <div class="select-menu-list js-navigation-container" role="menu">
+
+                <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input checked="checked" id="do_included" name="do" type="radio" value="included" />
+                    <span class="select-menu-item-heading">Not watching</span>
+                    <span class="description">Be notified when participating or @mentioned.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+                      Watch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input id="do_subscribed" name="do" type="radio" value="subscribed" />
+                    <span class="select-menu-item-heading">Watching</span>
+                    <span class="description">Be notified of all conversations.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+                      Unwatch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input id="do_ignore" name="do" type="radio" value="ignore" />
+                    <span class="select-menu-item-heading">Ignoring</span>
+                    <span class="description">Never be notified.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-mute" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"></path></svg>
+                      Stop ignoring
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/omnidan/node-emoji/unstar" class="starred" data-form-nonce="683bd80276c5868e0b2b7a19efdb363372f8e678" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="semel/OswAPQUHwcgQCRJvFuMg+J8D1zXck/ghuRD9YIn0T0difgWXlFmEQ9+fRBrzj4DRHd6Qe0/cm1CgIlQg==" /></div>
+      <button
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Unstar this repository" title="Unstar omnidan/node-emoji"
+        data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">
+        <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="/omnidan/node-emoji/stargazers">
+          125
+        </a>
+</form>
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/omnidan/node-emoji/star" class="unstarred" data-form-nonce="683bd80276c5868e0b2b7a19efdb363372f8e678" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="XdkcEnpnepkFG77GeiP/4q8n4LWpts2ONucCrtQmz/2ZWz4CSRYHsvnpBb6YoS19DfLqaLTvAhS3DYGIO1Etmw==" /></div>
+      <button
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Star this repository" title="Star omnidan/node-emoji"
+        data-ga-click="Repository, click star button, action:blob#show; text:Star">
+        <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="/omnidan/node-emoji/stargazers">
+          125
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <a href="#fork-destination-box" class="btn btn-sm btn-with-count"
+              title="Fork your own copy of omnidan/node-emoji to your account"
+              aria-label="Fork your own copy of omnidan/node-emoji to your account"
+              rel="facebox"
+              data-ga-click="Repository, show fork modal, action:blob#show; text:Fork">
+              <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+            Fork
+          </a>
+
+          <div id="fork-destination-box" style="display: none;">
+            <h2 class="facebox-header" data-facebox-id="facebox-header">Where should we fork this repository?</h2>
+            <include-fragment src=""
+                class="js-fork-select-fragment fork-select-fragment"
+                data-url="/omnidan/node-emoji/fork?fragment=1">
+              <img alt="Loading" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" />
+            </include-fragment>
+          </div>
+
+    <a href="/omnidan/node-emoji/network" class="social-count">
+      32
+    </a>
+  </li>
+</ul>
+
+    <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+  <span class="author" itemprop="author"><a href="/omnidan" class="url fn" rel="author">omnidan</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/omnidan/node-emoji" data-pjax="#js-repo-pjax-container">node-emoji</a></strong>
+
+</h1>
+
+  </div>
+  <div class="container">
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/omnidan/node-emoji" aria-selected="true" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /omnidan/node-emoji" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/omnidan/node-emoji/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /omnidan/node-emoji/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+        <span itemprop="name">Issues</span>
+        <span class="counter">5</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/omnidan/node-emoji/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /omnidan/node-emoji/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="/omnidan/node-emoji/wiki" class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /omnidan/node-emoji/wiki">
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path></svg>
+      Wiki
+</a>
+
+  <a href="/omnidan/node-emoji/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /omnidan/node-emoji/pulse">
+    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8z"></path></svg>
+    Pulse
+</a>
+  <a href="/omnidan/node-emoji/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /omnidan/node-emoji/graphs">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"></path></svg>
+    Graphs
+</a>
+
+</nav>
+
+  </div>
+</div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+
+<a href="/omnidan/node-emoji/blob/92c0054e6316e65bf23378f89902f3f4bee17054/lib/emoji.json" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+<!-- blob contrib key: blob_contributors:v21:885c4829dea5d1f7ddcc329143112cfb -->
+
+<div class="file-navigation js-zeroclipboard-container">
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu left">
+  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    title="master"
+    type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/omnidan/node-emoji/blob/master/lib/emoji.json"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text" title="master">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/omnidan/node-emoji/tree/v1.3.1/lib/emoji.json"
+              data-name="v1.3.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.3.1">
+                v1.3.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/omnidan/node-emoji/tree/v1.3.0/lib/emoji.json"
+              data-name="v1.3.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.3.0">
+                v1.3.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/omnidan/node-emoji/tree/v1.2.1/lib/emoji.json"
+              data-name="v1.2.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.2.1">
+                v1.2.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/omnidan/node-emoji/tree/v1.1.1/lib/emoji.json"
+              data-name="v1.1.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.1.1">
+                v1.1.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/omnidan/node-emoji/tree/v1.1.0/lib/emoji.json"
+              data-name="v1.1.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.1.0">
+                v1.1.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/omnidan/node-emoji/tree/v1.0.4/lib/emoji.json"
+              data-name="v1.0.4"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.0.4">
+                v1.0.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/omnidan/node-emoji/tree/v1.0.3/lib/emoji.json"
+              data-name="v1.0.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.0.3">
+                v1.0.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/omnidan/node-emoji/tree/v1.0.2/lib/emoji.json"
+              data-name="v1.0.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.0.2">
+                v1.0.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/omnidan/node-emoji/tree/v1.0.1/lib/emoji.json"
+              data-name="v1.0.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.0.1">
+                v1.0.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/omnidan/node-emoji/tree/v1.0.0/lib/emoji.json"
+              data-name="v1.0.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.0.0">
+                v1.0.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/omnidan/node-emoji/tree/v0.1.0/lib/emoji.json"
+              data-name="v0.1.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.1.0">
+                v0.1.0
+              </span>
+            </a>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="btn-group right">
+    <a href="/omnidan/node-emoji/find/master"
+          class="js-pjax-capture-input btn btn-sm"
+          data-pjax
+          data-hotkey="t">
+      Find file
+    </a>
+    <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
+  </div>
+  <div class="breadcrumb js-zeroclipboard-target">
+    <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/omnidan/node-emoji"><span>node-emoji</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/omnidan/node-emoji/tree/master/lib"><span>lib</span></a></span><span class="separator">/</span><strong class="final-path">emoji.json</strong>
+  </div>
+</div>
+
+
+  <div class="commit-tease">
+      <span class="right">
+        <a class="commit-tease-sha" href="/omnidan/node-emoji/commit/452cf80350cb9a90ccf444ef976e13e5e13fb217" data-pjax>
+          452cf80
+        </a>
+        <time datetime="2016-03-16T18:00:28Z" is="relative-time">Mar 16, 2016</time>
+      </span>
+      <div>
+        <img alt="@jackiehluo" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/8452682?v=3&amp;s=40" width="20" />
+        <a href="/jackiehluo" class="user-mention" rel="contributor">jackiehluo</a>
+          <a href="/omnidan/node-emoji/commit/452cf80350cb9a90ccf444ef976e13e5e13fb217" class="message" data-pjax="true" title="Add emoji from last two updates">Add emoji from last two updates</a>
+      </div>
+
+    <div class="commit-tease-contributors">
+      <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
+        <strong>2</strong>
+         contributors
+      </button>
+          <a class="avatar-link tooltipped tooltipped-s" aria-label="jackiehluo" href="/omnidan/node-emoji/commits/master/lib/emoji.json?author=jackiehluo"><img alt="@jackiehluo" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/8452682?v=3&amp;s=40" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="omnidan" href="/omnidan/node-emoji/commits/master/lib/emoji.json?author=omnidan"><img alt="@omnidan" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/668674?v=3&amp;s=40" width="20" /> </a>
+
+
+    </div>
+
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list" data-facebox-id="facebox-description">
+          <li class="facebox-user-list-item">
+            <img alt="@jackiehluo" height="24" src="https://avatars3.githubusercontent.com/u/8452682?v=3&amp;s=48" width="24" />
+            <a href="/jackiehluo">jackiehluo</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@omnidan" height="24" src="https://avatars2.githubusercontent.com/u/668674?v=3&amp;s=48" width="24" />
+            <a href="/omnidan">omnidan</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+<div class="file">
+  <div class="file-header">
+  <div class="file-actions">
+
+    <div class="btn-group">
+      <a href="/omnidan/node-emoji/raw/master/lib/emoji.json" class="btn btn-sm " id="raw-url">Raw</a>
+        <a href="/omnidan/node-emoji/blame/master/lib/emoji.json" class="btn btn-sm js-update-url-with-hash">Blame</a>
+      <a href="/omnidan/node-emoji/commits/master/lib/emoji.json" class="btn btn-sm " rel="nofollow">History</a>
+    </div>
+
+        <a class="btn-octicon tooltipped tooltipped-nw"
+           href="github-mac://openRepo/https://github.com/omnidan/node-emoji?branch=master&amp;filepath=lib%2Femoji.json"
+           aria-label="Open this file in GitHub Desktop"
+           data-ga-click="Repository, open with desktop, type:mac">
+            <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"></path></svg>
+        </a>
+
+        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/omnidan/node-emoji/edit/master/lib/emoji.json" class="inline-form js-update-url-with-hash" data-form-nonce="683bd80276c5868e0b2b7a19efdb363372f8e678" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="7jYWll2T4CcgW3nIPn4Oj2YLU+2gBiHExd3A+GsQcetSe+DGPSWdDjWAe27C7zgzxtVFDJhCswQSkkxe3bGZ6A==" /></div>
+          <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
+            aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
+            <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"></path></svg>
+          </button>
+</form>        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/omnidan/node-emoji/delete/master/lib/emoji.json" class="inline-form" data-form-nonce="683bd80276c5868e0b2b7a19efdb363372f8e678" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="dFr62MUQVngb3tKb4b4LI6ByuDv4RDp1/CIhSZynlMq3isj1B2OaFYHbYThgIn1KU/TMCUZAFZfu03tZzPOUkg==" /></div>
+          <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
+            aria-label="Fork this project and delete the file" data-disable-with>
+            <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"></path></svg>
+          </button>
+</form>  </div>
+
+  <div class="file-info">
+      1 lines (1 sloc)
+      <span class="file-info-divider"></span>
+    27.2 KB
+  </div>
+</div>
+
+  
+
+  <div itemprop="text" class="blob-wrapper data type-json">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line">{&quot;100&quot;:&quot;💯&quot;,&quot;1234&quot;:&quot;🔢&quot;,&quot;interrobang&quot;:&quot;⁉️&quot;,&quot;tm&quot;:&quot;™️&quot;,&quot;information_source&quot;:&quot;ℹ️&quot;,&quot;left_right_arrow&quot;:&quot;↔️&quot;,&quot;arrow_up_down&quot;:&quot;↕️&quot;,&quot;arrow_upper_left&quot;:&quot;↖️&quot;,&quot;arrow_upper_right&quot;:&quot;↗️&quot;,&quot;arrow_lower_right&quot;:&quot;↘️&quot;,&quot;arrow_lower_left&quot;:&quot;↙️&quot;,&quot;keyboard&quot;:&quot;⌨&quot;,&quot;sunny&quot;:&quot;☀️&quot;,&quot;cloud&quot;:&quot;☁️&quot;,&quot;umbrella&quot;:&quot;☔️&quot;,&quot;showman&quot;:&quot;☃&quot;,&quot;comet&quot;:&quot;☄&quot;,&quot;ballot_box_with_check&quot;:&quot;☑️&quot;,&quot;coffee&quot;:&quot;☕️&quot;,&quot;shamrock&quot;:&quot;☘&quot;,&quot;skull_and_crossbones&quot;:&quot;☠&quot;,&quot;radioactive_sign&quot;:&quot;☢&quot;,&quot;biohazard_sign&quot;:&quot;☣&quot;,&quot;orthodox_cross&quot;:&quot;☦&quot;,&quot;wheel_of_dharma&quot;:&quot;☸&quot;,&quot;white_frowning_face&quot;:&quot;☹&quot;,&quot;aries&quot;:&quot;♈️&quot;,&quot;taurus&quot;:&quot;♉️&quot;,&quot;sagittarius&quot;:&quot;♐️&quot;,&quot;capricorn&quot;:&quot;♑️&quot;,&quot;aquarius&quot;:&quot;♒️&quot;,&quot;pisces&quot;:&quot;♓️&quot;,&quot;spades&quot;:&quot;♠️&quot;,&quot;clubs&quot;:&quot;♣️&quot;,&quot;hearts&quot;:&quot;♥️&quot;,&quot;diamonds&quot;:&quot;♦️&quot;,&quot;hotsprings&quot;:&quot;♨️&quot;,&quot;hammer_and_pick&quot;:&quot;⚒&quot;,&quot;anchor&quot;:&quot;⚓️&quot;,&quot;crossed_swords&quot;:&quot;⚔&quot;,&quot;scales&quot;:&quot;⚖&quot;,&quot;alembic&quot;:&quot;⚗&quot;,&quot;gear&quot;:&quot;⚙&quot;,&quot;scissors&quot;:&quot;✂️&quot;,&quot;white_check_mark&quot;:&quot;✅&quot;,&quot;airplane&quot;:&quot;✈️&quot;,&quot;email&quot;:&quot;✉️&quot;,&quot;envelope&quot;:&quot;✉️&quot;,&quot;black_nib&quot;:&quot;✒️&quot;,&quot;heavy_check_mark&quot;:&quot;✔️&quot;,&quot;heavy_multiplication_x&quot;:&quot;✖️&quot;,&quot;star_of_david&quot;:&quot;✡&quot;,&quot;sparkles&quot;:&quot;✨&quot;,&quot;eight_spoked_asterisk&quot;:&quot;✳️&quot;,&quot;eight_pointed_black_star&quot;:&quot;✴️&quot;,&quot;snowflake&quot;:&quot;❄️&quot;,&quot;sparkle&quot;:&quot;❇️&quot;,&quot;question&quot;:&quot;❓&quot;,&quot;grey_question&quot;:&quot;❔&quot;,&quot;grey_exclamation&quot;:&quot;❕&quot;,&quot;exclamation&quot;:&quot;❗️&quot;,&quot;heavy_exclamation_mark&quot;:&quot;❗️&quot;,&quot;heavy_heart_exclamation_mark_ornament&quot;:&quot;❣&quot;,&quot;heart&quot;:&quot;❤️&quot;,&quot;heavy_plus_sign&quot;:&quot;➕&quot;,&quot;heavy_minus_sign&quot;:&quot;➖&quot;,&quot;heavy_division_sign&quot;:&quot;➗&quot;,&quot;arrow_heading_up&quot;:&quot;⤴️&quot;,&quot;arrow_heading_down&quot;:&quot;⤵️&quot;,&quot;wavy_dash&quot;:&quot;〰️&quot;,&quot;congratulations&quot;:&quot;㊗️&quot;,&quot;secret&quot;:&quot;㊙️&quot;,&quot;copyright&quot;:&quot;©️&quot;,&quot;registered&quot;:&quot;®️&quot;,&quot;bangbang&quot;:&quot;‼️&quot;,&quot;leftwards_arrow_with_hook&quot;:&quot;↩️&quot;,&quot;arrow_right_hook&quot;:&quot;↪️&quot;,&quot;watch&quot;:&quot;⌚️&quot;,&quot;hourglass&quot;:&quot;⌛️&quot;,&quot;fast_forward&quot;:&quot;⏩&quot;,&quot;rewind&quot;:&quot;⏪&quot;,&quot;arrow_double_up&quot;:&quot;⏫&quot;,&quot;arrow_double_down&quot;:&quot;⏬&quot;,&quot;black_right_pointing_double_triangle_with_vertical_bar&quot;:&quot;⏭&quot;,&quot;black_left_pointing_double_triangle_with_vertical_bar&quot;:&quot;⏮&quot;,&quot;black_right_pointing_triangle_with_double_vertical_bar&quot;:&quot;⏯&quot;,&quot;alarm_clock&quot;:&quot;⏰&quot;,&quot;stopwatch&quot;:&quot;⏱&quot;,&quot;timer_clock&quot;:&quot;⏲&quot;,&quot;hourglass_flowing_sand&quot;:&quot;⏳&quot;,&quot;double_vertical_bar&quot;:&quot;⏸&quot;,&quot;black_square_for_stop&quot;:&quot;⏹&quot;,&quot;black_circle_for_record&quot;:&quot;⏺&quot;,&quot;m&quot;:&quot;Ⓜ️&quot;,&quot;black_small_square&quot;:&quot;▪️&quot;,&quot;white_small_square&quot;:&quot;▫️&quot;,&quot;arrow_forward&quot;:&quot;▶️&quot;,&quot;arrow_backward&quot;:&quot;◀️&quot;,&quot;white_medium_square&quot;:&quot;◻️&quot;,&quot;black_medium_square&quot;:&quot;◼️&quot;,&quot;white_medium_small_square&quot;:&quot;◽️&quot;,&quot;black_medium_small_square&quot;:&quot;◾️&quot;,&quot;phone&quot;:&quot;☎️&quot;,&quot;telephone&quot;:&quot;☎️&quot;,&quot;point_up&quot;:&quot;☝️&quot;,&quot;star_and_crescent&quot;:&quot;☪&quot;,&quot;peace_symbol&quot;:&quot;☮&quot;,&quot;yin_yang&quot;:&quot;☯&quot;,&quot;relaxed&quot;:&quot;☺️&quot;,&quot;gemini&quot;:&quot;♊️&quot;,&quot;cancer&quot;:&quot;♋️&quot;,&quot;leo&quot;:&quot;♌️&quot;,&quot;virgo&quot;:&quot;♍️&quot;,&quot;libra&quot;:&quot;♎️&quot;,&quot;scorpius&quot;:&quot;♏️&quot;,&quot;recycle&quot;:&quot;♻️&quot;,&quot;wheelchair&quot;:&quot;♿️&quot;,&quot;atom_symbol&quot;:&quot;⚛&quot;,&quot;fleur_de_lis&quot;:&quot;⚜&quot;,&quot;warning&quot;:&quot;⚠️&quot;,&quot;zap&quot;:&quot;⚡️&quot;,&quot;white_circle&quot;:&quot;⚪️&quot;,&quot;black_circle&quot;:&quot;⚫️&quot;,&quot;coffin&quot;:&quot;⚰&quot;,&quot;funeral_urn&quot;:&quot;⚱&quot;,&quot;soccer&quot;:&quot;⚽️&quot;,&quot;baseball&quot;:&quot;⚾️&quot;,&quot;snowman&quot;:&quot;⛄️&quot;,&quot;partly_sunny&quot;:&quot;⛅️&quot;,&quot;thunder_cloud_and_rain&quot;:&quot;⛈&quot;,&quot;ophiuchus&quot;:&quot;⛎&quot;,&quot;pick&quot;:&quot;⛏&quot;,&quot;helmet_with_white_cross&quot;:&quot;⛑&quot;,&quot;chains&quot;:&quot;⛓&quot;,&quot;no_entry&quot;:&quot;⛔️&quot;,&quot;shinto_shrine&quot;:&quot;⛩&quot;,&quot;church&quot;:&quot;⛪️&quot;,&quot;mountain&quot;:&quot;⛰&quot;,&quot;umbrella_on_ground&quot;:&quot;⛱&quot;,&quot;fountain&quot;:&quot;⛲️&quot;,&quot;golf&quot;:&quot;⛳️&quot;,&quot;ferry&quot;:&quot;⛴&quot;,&quot;boat&quot;:&quot;⛵️&quot;,&quot;sailboat&quot;:&quot;⛵️&quot;,&quot;skier&quot;:&quot;⛷&quot;,&quot;ice_skate&quot;:&quot;⛸&quot;,&quot;person_with_ball&quot;:&quot;⛹&quot;,&quot;tent&quot;:&quot;⛺️&quot;,&quot;fuelpump&quot;:&quot;⛽️&quot;,&quot;fist&quot;:&quot;✊&quot;,&quot;hand&quot;:&quot;✋&quot;,&quot;raised_hand&quot;:&quot;✋&quot;,&quot;v&quot;:&quot;✌️&quot;,&quot;writing_hand&quot;:&quot;✍&quot;,&quot;pencil2&quot;:&quot;✏️&quot;,&quot;latin_cross&quot;:&quot;✝&quot;,&quot;x&quot;:&quot;❌&quot;,&quot;negative_squared_cross_mark&quot;:&quot;❎&quot;,&quot;arrow_right&quot;:&quot;➡️&quot;,&quot;curly_loop&quot;:&quot;➰&quot;,&quot;loop&quot;:&quot;➿&quot;,&quot;arrow_left&quot;:&quot;⬅️&quot;,&quot;arrow_up&quot;:&quot;⬆️&quot;,&quot;arrow_down&quot;:&quot;⬇️&quot;,&quot;black_large_square&quot;:&quot;⬛️&quot;,&quot;white_large_square&quot;:&quot;⬜️&quot;,&quot;star&quot;:&quot;⭐️&quot;,&quot;o&quot;:&quot;⭕️&quot;,&quot;part_alternation_mark&quot;:&quot;〽️&quot;,&quot;mahjong&quot;:&quot;🀄️&quot;,&quot;black_joker&quot;:&quot;🃏&quot;,&quot;a&quot;:&quot;🅰️&quot;,&quot;b&quot;:&quot;🅱️&quot;,&quot;o2&quot;:&quot;🅾️&quot;,&quot;parking&quot;:&quot;🅿️&quot;,&quot;ab&quot;:&quot;🆎&quot;,&quot;cl&quot;:&quot;🆑&quot;,&quot;cool&quot;:&quot;🆒&quot;,&quot;free&quot;:&quot;🆓&quot;,&quot;id&quot;:&quot;🆔&quot;,&quot;new&quot;:&quot;🆕&quot;,&quot;ng&quot;:&quot;🆖&quot;,&quot;ok&quot;:&quot;🆗&quot;,&quot;sos&quot;:&quot;🆘&quot;,&quot;up&quot;:&quot;🆙&quot;,&quot;vs&quot;:&quot;🆚&quot;,&quot;koko&quot;:&quot;🈁&quot;,&quot;sa&quot;:&quot;🈂️&quot;,&quot;u7121&quot;:&quot;🈚️&quot;,&quot;u6307&quot;:&quot;🈯️&quot;,&quot;u7981&quot;:&quot;🈲&quot;,&quot;u7a7a&quot;:&quot;🈳&quot;,&quot;u5408&quot;:&quot;🈴&quot;,&quot;u6e80&quot;:&quot;🈵&quot;,&quot;u6709&quot;:&quot;🈶&quot;,&quot;u6708&quot;:&quot;🈷️&quot;,&quot;u7533&quot;:&quot;🈸&quot;,&quot;u5272&quot;:&quot;🈹&quot;,&quot;u55b6&quot;:&quot;🈺&quot;,&quot;ideograph_advantage&quot;:&quot;🉐&quot;,&quot;accept&quot;:&quot;🉑&quot;,&quot;cyclone&quot;:&quot;🌀&quot;,&quot;foggy&quot;:&quot;🌁&quot;,&quot;closed_umbrella&quot;:&quot;🌂&quot;,&quot;night_with_stars&quot;:&quot;🌃&quot;,&quot;sunrise_over_mountains&quot;:&quot;🌄&quot;,&quot;sunrise&quot;:&quot;🌅&quot;,&quot;city_sunset&quot;:&quot;🌆&quot;,&quot;city_sunrise&quot;:&quot;🌇&quot;,&quot;rainbow&quot;:&quot;🌈&quot;,&quot;bridge_at_night&quot;:&quot;🌉&quot;,&quot;ocean&quot;:&quot;🌊&quot;,&quot;volcano&quot;:&quot;🌋&quot;,&quot;milky_way&quot;:&quot;🌌&quot;,&quot;earth_africa&quot;:&quot;🌍&quot;,&quot;earth_americas&quot;:&quot;🌎&quot;,&quot;earth_asia&quot;:&quot;🌏&quot;,&quot;globe_with_meridians&quot;:&quot;🌐&quot;,&quot;new_moon&quot;:&quot;🌑&quot;,&quot;waxing_crescent_moon&quot;:&quot;🌒&quot;,&quot;first_quarter_moon&quot;:&quot;🌓&quot;,&quot;moon&quot;:&quot;🌔&quot;,&quot;waxing_gibbous_moon&quot;:&quot;🌔&quot;,&quot;full_moon&quot;:&quot;🌕&quot;,&quot;waning_gibbous_moon&quot;:&quot;🌖&quot;,&quot;last_quarter_moon&quot;:&quot;🌗&quot;,&quot;waning_crescent_moon&quot;:&quot;🌘&quot;,&quot;crescent_moon&quot;:&quot;🌙&quot;,&quot;new_moon_with_face&quot;:&quot;🌚&quot;,&quot;first_quarter_moon_with_face&quot;:&quot;🌛&quot;,&quot;last_quarter_moon_with_face&quot;:&quot;🌜&quot;,&quot;full_moon_with_face&quot;:&quot;🌝&quot;,&quot;sun_with_face&quot;:&quot;🌞&quot;,&quot;star2&quot;:&quot;🌟&quot;,&quot;stars&quot;:&quot;🌠&quot;,&quot;thermometer&quot;:&quot;🌡&quot;,&quot;mostly_sunny&quot;:&quot;🌤&quot;,&quot;sun_small_cloud&quot;:&quot;🌤&quot;,&quot;barely_sunny&quot;:&quot;🌥&quot;,&quot;sun_behind_cloud&quot;:&quot;🌥&quot;,&quot;partly_sunny_rain&quot;:&quot;🌦&quot;,&quot;sun_behind_rain_cloud&quot;:&quot;🌦&quot;,&quot;rain_cloud&quot;:&quot;🌧&quot;,&quot;snow_cloud&quot;:&quot;🌨&quot;,&quot;lightning&quot;:&quot;🌩&quot;,&quot;lightning_cloud&quot;:&quot;🌩&quot;,&quot;tornado&quot;:&quot;🌪&quot;,&quot;tornado_cloud&quot;:&quot;🌪&quot;,&quot;fog&quot;:&quot;🌫&quot;,&quot;wind_blowing_face&quot;:&quot;🌬&quot;,&quot;hotdog&quot;:&quot;🌭&quot;,&quot;taco&quot;:&quot;🌮&quot;,&quot;burrito&quot;:&quot;🌯&quot;,&quot;chestnut&quot;:&quot;🌰&quot;,&quot;seedling&quot;:&quot;🌱&quot;,&quot;evergreen_tree&quot;:&quot;🌲&quot;,&quot;deciduous_tree&quot;:&quot;🌳&quot;,&quot;palm_tree&quot;:&quot;🌴&quot;,&quot;cactus&quot;:&quot;🌵&quot;,&quot;hot_pepper&quot;:&quot;🌶&quot;,&quot;tulip&quot;:&quot;🌷&quot;,&quot;cherry_blossom&quot;:&quot;🌸&quot;,&quot;rose&quot;:&quot;🌹&quot;,&quot;hibiscus&quot;:&quot;🌺&quot;,&quot;sunflower&quot;:&quot;🌻&quot;,&quot;blossom&quot;:&quot;🌼&quot;,&quot;corn&quot;:&quot;🌽&quot;,&quot;ear_of_rice&quot;:&quot;🌾&quot;,&quot;herb&quot;:&quot;🌿&quot;,&quot;four_leaf_clover&quot;:&quot;🍀&quot;,&quot;maple_leaf&quot;:&quot;🍁&quot;,&quot;fallen_leaf&quot;:&quot;🍂&quot;,&quot;leaves&quot;:&quot;🍃&quot;,&quot;mushroom&quot;:&quot;🍄&quot;,&quot;tomato&quot;:&quot;🍅&quot;,&quot;eggplant&quot;:&quot;🍆&quot;,&quot;grapes&quot;:&quot;🍇&quot;,&quot;melon&quot;:&quot;🍈&quot;,&quot;watermelon&quot;:&quot;🍉&quot;,&quot;tangerine&quot;:&quot;🍊&quot;,&quot;lemon&quot;:&quot;🍋&quot;,&quot;banana&quot;:&quot;🍌&quot;,&quot;pineapple&quot;:&quot;🍍&quot;,&quot;apple&quot;:&quot;🍎&quot;,&quot;green_apple&quot;:&quot;🍏&quot;,&quot;pear&quot;:&quot;🍐&quot;,&quot;peach&quot;:&quot;🍑&quot;,&quot;cherries&quot;:&quot;🍒&quot;,&quot;strawberry&quot;:&quot;🍓&quot;,&quot;hamburger&quot;:&quot;🍔&quot;,&quot;pizza&quot;:&quot;🍕&quot;,&quot;meat_on_bone&quot;:&quot;🍖&quot;,&quot;poultry_leg&quot;:&quot;🍗&quot;,&quot;rice_cracker&quot;:&quot;🍘&quot;,&quot;rice_ball&quot;:&quot;🍙&quot;,&quot;rice&quot;:&quot;🍚&quot;,&quot;curry&quot;:&quot;🍛&quot;,&quot;ramen&quot;:&quot;🍜&quot;,&quot;spaghetti&quot;:&quot;🍝&quot;,&quot;bread&quot;:&quot;🍞&quot;,&quot;fries&quot;:&quot;🍟&quot;,&quot;sweet_potato&quot;:&quot;🍠&quot;,&quot;dango&quot;:&quot;🍡&quot;,&quot;oden&quot;:&quot;🍢&quot;,&quot;sushi&quot;:&quot;🍣&quot;,&quot;fried_shrimp&quot;:&quot;🍤&quot;,&quot;fish_cake&quot;:&quot;🍥&quot;,&quot;icecream&quot;:&quot;🍦&quot;,&quot;shaved_ice&quot;:&quot;🍧&quot;,&quot;ice_cream&quot;:&quot;🍨&quot;,&quot;doughnut&quot;:&quot;🍩&quot;,&quot;cookie&quot;:&quot;🍪&quot;,&quot;chocolate_bar&quot;:&quot;🍫&quot;,&quot;candy&quot;:&quot;🍬&quot;,&quot;lollipop&quot;:&quot;🍭&quot;,&quot;custard&quot;:&quot;🍮&quot;,&quot;honey_pot&quot;:&quot;🍯&quot;,&quot;cake&quot;:&quot;🍰&quot;,&quot;bento&quot;:&quot;🍱&quot;,&quot;stew&quot;:&quot;🍲&quot;,&quot;egg&quot;:&quot;🍳&quot;,&quot;fork_and_knife&quot;:&quot;🍴&quot;,&quot;tea&quot;:&quot;🍵&quot;,&quot;sake&quot;:&quot;🍶&quot;,&quot;wine_glass&quot;:&quot;🍷&quot;,&quot;cocktail&quot;:&quot;🍸&quot;,&quot;tropical_drink&quot;:&quot;🍹&quot;,&quot;beer&quot;:&quot;🍺&quot;,&quot;beers&quot;:&quot;🍻&quot;,&quot;baby_bottle&quot;:&quot;🍼&quot;,&quot;knife_fork_plate&quot;:&quot;🍽&quot;,&quot;champagne&quot;:&quot;🍾&quot;,&quot;popcorn&quot;:&quot;🍿&quot;,&quot;ribbon&quot;:&quot;🎀&quot;,&quot;gift&quot;:&quot;🎁&quot;,&quot;birthday&quot;:&quot;🎂&quot;,&quot;jack_o_lantern&quot;:&quot;🎃&quot;,&quot;christmas_tree&quot;:&quot;🎄&quot;,&quot;santa&quot;:&quot;🎅&quot;,&quot;fireworks&quot;:&quot;🎆&quot;,&quot;sparkler&quot;:&quot;🎇&quot;,&quot;balloon&quot;:&quot;🎈&quot;,&quot;tada&quot;:&quot;🎉&quot;,&quot;confetti_ball&quot;:&quot;🎊&quot;,&quot;tanabata_tree&quot;:&quot;🎋&quot;,&quot;crossed_flags&quot;:&quot;🎌&quot;,&quot;bamboo&quot;:&quot;🎍&quot;,&quot;dolls&quot;:&quot;🎎&quot;,&quot;flags&quot;:&quot;🎏&quot;,&quot;wind_chime&quot;:&quot;🎐&quot;,&quot;rice_scene&quot;:&quot;🎑&quot;,&quot;school_satchel&quot;:&quot;🎒&quot;,&quot;mortar_board&quot;:&quot;🎓&quot;,&quot;medal&quot;:&quot;🎖&quot;,&quot;reminder_ribbon&quot;:&quot;🎗&quot;,&quot;studio_microphone&quot;:&quot;🎙&quot;,&quot;level_slider&quot;:&quot;🎚&quot;,&quot;control_knobs&quot;:&quot;🎛&quot;,&quot;film_frames&quot;:&quot;🎞&quot;,&quot;admission_tickets&quot;:&quot;🎟&quot;,&quot;carousel_horse&quot;:&quot;🎠&quot;,&quot;ferris_wheel&quot;:&quot;🎡&quot;,&quot;roller_coaster&quot;:&quot;🎢&quot;,&quot;fishing_pole_and_fish&quot;:&quot;🎣&quot;,&quot;microphone&quot;:&quot;🎤&quot;,&quot;movie_camera&quot;:&quot;🎥&quot;,&quot;cinema&quot;:&quot;🎦&quot;,&quot;headphones&quot;:&quot;🎧&quot;,&quot;art&quot;:&quot;🎨&quot;,&quot;tophat&quot;:&quot;🎩&quot;,&quot;circus_tent&quot;:&quot;🎪&quot;,&quot;ticket&quot;:&quot;🎫&quot;,&quot;clapper&quot;:&quot;🎬&quot;,&quot;performing_arts&quot;:&quot;🎭&quot;,&quot;video_game&quot;:&quot;🎮&quot;,&quot;dart&quot;:&quot;🎯&quot;,&quot;slot_machine&quot;:&quot;🎰&quot;,&quot;8ball&quot;:&quot;🎱&quot;,&quot;game_die&quot;:&quot;🎲&quot;,&quot;bowling&quot;:&quot;🎳&quot;,&quot;flower_playing_cards&quot;:&quot;🎴&quot;,&quot;musical_note&quot;:&quot;🎵&quot;,&quot;notes&quot;:&quot;🎶&quot;,&quot;saxophone&quot;:&quot;🎷&quot;,&quot;guitar&quot;:&quot;🎸&quot;,&quot;musical_keyboard&quot;:&quot;🎹&quot;,&quot;trumpet&quot;:&quot;🎺&quot;,&quot;violin&quot;:&quot;🎻&quot;,&quot;musical_score&quot;:&quot;🎼&quot;,&quot;running_shirt_with_sash&quot;:&quot;🎽&quot;,&quot;tennis&quot;:&quot;🎾&quot;,&quot;ski&quot;:&quot;🎿&quot;,&quot;basketball&quot;:&quot;🏀&quot;,&quot;checkered_flag&quot;:&quot;🏁&quot;,&quot;snowboarder&quot;:&quot;🏂&quot;,&quot;runner&quot;:&quot;🏃&quot;,&quot;running&quot;:&quot;🏃&quot;,&quot;surfer&quot;:&quot;🏄&quot;,&quot;sports_medal&quot;:&quot;🏅&quot;,&quot;trophy&quot;:&quot;🏆&quot;,&quot;horse_racing&quot;:&quot;🏇&quot;,&quot;football&quot;:&quot;🏈&quot;,&quot;rugby_football&quot;:&quot;🏉&quot;,&quot;swimmer&quot;:&quot;🏊&quot;,&quot;weight_lifter&quot;:&quot;🏋&quot;,&quot;golfer&quot;:&quot;🏌&quot;,&quot;racing_motorcycle&quot;:&quot;🏍&quot;,&quot;racing_car&quot;:&quot;🏎&quot;,&quot;cricket_bat_and_ball&quot;:&quot;🏏&quot;,&quot;volleyball&quot;:&quot;🏐&quot;,&quot;field_hockey_stick_and_ball&quot;:&quot;🏑&quot;,&quot;ice_hockey_stick_and_puck&quot;:&quot;🏒&quot;,&quot;table_tennis_paddle_and_ball&quot;:&quot;🏓&quot;,&quot;snow_capped_mountain&quot;:&quot;🏔&quot;,&quot;camping&quot;:&quot;🏕&quot;,&quot;beach_with_umbrella&quot;:&quot;🏖&quot;,&quot;building_construction&quot;:&quot;🏗&quot;,&quot;house_buildings&quot;:&quot;🏘&quot;,&quot;cityscape&quot;:&quot;🏙&quot;,&quot;derelict_house_building&quot;:&quot;🏚&quot;,&quot;classical_building&quot;:&quot;🏛&quot;,&quot;desert&quot;:&quot;🏜&quot;,&quot;desert_island&quot;:&quot;🏝&quot;,&quot;national_park&quot;:&quot;🏞&quot;,&quot;stadium&quot;:&quot;🏟&quot;,&quot;house&quot;:&quot;🏠&quot;,&quot;house_with_garden&quot;:&quot;🏡&quot;,&quot;office&quot;:&quot;🏢&quot;,&quot;post_office&quot;:&quot;🏣&quot;,&quot;european_post_office&quot;:&quot;🏤&quot;,&quot;hospital&quot;:&quot;🏥&quot;,&quot;bank&quot;:&quot;🏦&quot;,&quot;atm&quot;:&quot;🏧&quot;,&quot;hotel&quot;:&quot;🏨&quot;,&quot;love_hotel&quot;:&quot;🏩&quot;,&quot;convenience_store&quot;:&quot;🏪&quot;,&quot;school&quot;:&quot;🏫&quot;,&quot;department_store&quot;:&quot;🏬&quot;,&quot;factory&quot;:&quot;🏭&quot;,&quot;izakaya_lantern&quot;:&quot;🏮&quot;,&quot;lantern&quot;:&quot;🏮&quot;,&quot;japanese_castle&quot;:&quot;🏯&quot;,&quot;european_castle&quot;:&quot;🏰&quot;,&quot;waving_white_flag&quot;:&quot;🏳&quot;,&quot;waving_black_flag&quot;:&quot;🏴&quot;,&quot;rosette&quot;:&quot;🏵&quot;,&quot;label&quot;:&quot;🏷&quot;,&quot;badminton_racquet_and_shuttlecock&quot;:&quot;🏸&quot;,&quot;bow_and_arrow&quot;:&quot;🏹&quot;,&quot;amphora&quot;:&quot;🏺&quot;,&quot;skin-tone-2&quot;:&quot;🏻&quot;,&quot;skin-tone-3&quot;:&quot;🏼&quot;,&quot;skin-tone-4&quot;:&quot;🏽&quot;,&quot;skin-tone-5&quot;:&quot;🏾&quot;,&quot;skin-tone-6&quot;:&quot;🏿&quot;,&quot;rat&quot;:&quot;🐀&quot;,&quot;mouse2&quot;:&quot;🐁&quot;,&quot;ox&quot;:&quot;🐂&quot;,&quot;water_buffalo&quot;:&quot;🐃&quot;,&quot;cow2&quot;:&quot;🐄&quot;,&quot;tiger2&quot;:&quot;🐅&quot;,&quot;leopard&quot;:&quot;🐆&quot;,&quot;rabbit2&quot;:&quot;🐇&quot;,&quot;cat2&quot;:&quot;🐈&quot;,&quot;dragon&quot;:&quot;🐉&quot;,&quot;crocodile&quot;:&quot;🐊&quot;,&quot;whale2&quot;:&quot;🐋&quot;,&quot;snail&quot;:&quot;🐌&quot;,&quot;snake&quot;:&quot;🐍&quot;,&quot;racehorse&quot;:&quot;🐎&quot;,&quot;ram&quot;:&quot;🐏&quot;,&quot;goat&quot;:&quot;🐐&quot;,&quot;sheep&quot;:&quot;🐑&quot;,&quot;monkey&quot;:&quot;🐒&quot;,&quot;rooster&quot;:&quot;🐓&quot;,&quot;chicken&quot;:&quot;🐔&quot;,&quot;dog2&quot;:&quot;🐕&quot;,&quot;pig2&quot;:&quot;🐖&quot;,&quot;boar&quot;:&quot;🐗&quot;,&quot;elephant&quot;:&quot;🐘&quot;,&quot;octopus&quot;:&quot;🐙&quot;,&quot;shell&quot;:&quot;🐚&quot;,&quot;bug&quot;:&quot;🐛&quot;,&quot;ant&quot;:&quot;🐜&quot;,&quot;bee&quot;:&quot;🐝&quot;,&quot;honeybee&quot;:&quot;🐝&quot;,&quot;beetle&quot;:&quot;🐞&quot;,&quot;fish&quot;:&quot;🐟&quot;,&quot;tropical_fish&quot;:&quot;🐠&quot;,&quot;blowfish&quot;:&quot;🐡&quot;,&quot;turtle&quot;:&quot;🐢&quot;,&quot;hatching_chick&quot;:&quot;🐣&quot;,&quot;baby_chick&quot;:&quot;🐤&quot;,&quot;hatched_chick&quot;:&quot;🐥&quot;,&quot;bird&quot;:&quot;🐦&quot;,&quot;penguin&quot;:&quot;🐧&quot;,&quot;koala&quot;:&quot;🐨&quot;,&quot;poodle&quot;:&quot;🐩&quot;,&quot;dromedary_camel&quot;:&quot;🐪&quot;,&quot;camel&quot;:&quot;🐫&quot;,&quot;dolphin&quot;:&quot;🐬&quot;,&quot;flipper&quot;:&quot;🐬&quot;,&quot;mouse&quot;:&quot;🐭&quot;,&quot;cow&quot;:&quot;🐮&quot;,&quot;tiger&quot;:&quot;🐯&quot;,&quot;rabbit&quot;:&quot;🐰&quot;,&quot;cat&quot;:&quot;🐱&quot;,&quot;dragon_face&quot;:&quot;🐲&quot;,&quot;whale&quot;:&quot;🐳&quot;,&quot;horse&quot;:&quot;🐴&quot;,&quot;monkey_face&quot;:&quot;🐵&quot;,&quot;dog&quot;:&quot;🐶&quot;,&quot;pig&quot;:&quot;🐷&quot;,&quot;frog&quot;:&quot;🐸&quot;,&quot;hamster&quot;:&quot;🐹&quot;,&quot;wolf&quot;:&quot;🐺&quot;,&quot;bear&quot;:&quot;🐻&quot;,&quot;panda_face&quot;:&quot;🐼&quot;,&quot;pig_nose&quot;:&quot;🐽&quot;,&quot;feet&quot;:&quot;🐾&quot;,&quot;paw_prints&quot;:&quot;🐾&quot;,&quot;chipmunk&quot;:&quot;🐿&quot;,&quot;eyes&quot;:&quot;👀&quot;,&quot;eye&quot;:&quot;👁&quot;,&quot;ear&quot;:&quot;👂&quot;,&quot;nose&quot;:&quot;👃&quot;,&quot;lips&quot;:&quot;👄&quot;,&quot;tongue&quot;:&quot;👅&quot;,&quot;point_up_2&quot;:&quot;👆&quot;,&quot;point_down&quot;:&quot;👇&quot;,&quot;point_left&quot;:&quot;👈&quot;,&quot;point_right&quot;:&quot;👉&quot;,&quot;facepunch&quot;:&quot;👊&quot;,&quot;punch&quot;:&quot;👊&quot;,&quot;wave&quot;:&quot;👋&quot;,&quot;ok_hand&quot;:&quot;👌&quot;,&quot;+1&quot;:&quot;👍&quot;,&quot;thumbsup&quot;:&quot;👍&quot;,&quot;-1&quot;:&quot;👎&quot;,&quot;thumbsdown&quot;:&quot;👎&quot;,&quot;clap&quot;:&quot;👏&quot;,&quot;open_hands&quot;:&quot;👐&quot;,&quot;crown&quot;:&quot;👑&quot;,&quot;womans_hat&quot;:&quot;👒&quot;,&quot;eyeglasses&quot;:&quot;👓&quot;,&quot;necktie&quot;:&quot;👔&quot;,&quot;shirt&quot;:&quot;👕&quot;,&quot;tshirt&quot;:&quot;👕&quot;,&quot;jeans&quot;:&quot;👖&quot;,&quot;dress&quot;:&quot;👗&quot;,&quot;kimono&quot;:&quot;👘&quot;,&quot;bikini&quot;:&quot;👙&quot;,&quot;womans_clothes&quot;:&quot;👚&quot;,&quot;purse&quot;:&quot;👛&quot;,&quot;handbag&quot;:&quot;👜&quot;,&quot;pouch&quot;:&quot;👝&quot;,&quot;mans_shoe&quot;:&quot;👞&quot;,&quot;shoe&quot;:&quot;👞&quot;,&quot;athletic_shoe&quot;:&quot;👟&quot;,&quot;high_heel&quot;:&quot;👠&quot;,&quot;sandal&quot;:&quot;👡&quot;,&quot;boot&quot;:&quot;👢&quot;,&quot;footprints&quot;:&quot;👣&quot;,&quot;bust_in_silhouette&quot;:&quot;👤&quot;,&quot;busts_in_silhouette&quot;:&quot;👥&quot;,&quot;boy&quot;:&quot;👦&quot;,&quot;girl&quot;:&quot;👧&quot;,&quot;man&quot;:&quot;👨&quot;,&quot;woman&quot;:&quot;👩&quot;,&quot;family&quot;:&quot;👨‍👩‍👦&quot;,&quot;man-woman-boy&quot;:&quot;👨‍👩‍👦&quot;,&quot;couple&quot;:&quot;👫&quot;,&quot;man_and_woman_holding_hands&quot;:&quot;👫&quot;,&quot;two_men_holding_hands&quot;:&quot;👬&quot;,&quot;two_women_holding_hands&quot;:&quot;👭&quot;,&quot;cop&quot;:&quot;👮&quot;,&quot;dancers&quot;:&quot;👯&quot;,&quot;bride_with_veil&quot;:&quot;👰&quot;,&quot;person_with_blond_hair&quot;:&quot;👱&quot;,&quot;man_with_gua_pi_mao&quot;:&quot;👲&quot;,&quot;man_with_turban&quot;:&quot;👳&quot;,&quot;older_man&quot;:&quot;👴&quot;,&quot;older_woman&quot;:&quot;👵&quot;,&quot;baby&quot;:&quot;👶&quot;,&quot;construction_worker&quot;:&quot;👷&quot;,&quot;princess&quot;:&quot;👸&quot;,&quot;japanese_ogre&quot;:&quot;👹&quot;,&quot;japanese_goblin&quot;:&quot;👺&quot;,&quot;ghost&quot;:&quot;👻&quot;,&quot;angel&quot;:&quot;👼&quot;,&quot;alien&quot;:&quot;👽&quot;,&quot;space_invader&quot;:&quot;👾&quot;,&quot;imp&quot;:&quot;👿&quot;,&quot;skull&quot;:&quot;💀&quot;,&quot;information_desk_person&quot;:&quot;💁&quot;,&quot;guardsman&quot;:&quot;💂&quot;,&quot;dancer&quot;:&quot;💃&quot;,&quot;lipstick&quot;:&quot;💄&quot;,&quot;nail_care&quot;:&quot;💅&quot;,&quot;massage&quot;:&quot;💆&quot;,&quot;haircut&quot;:&quot;💇&quot;,&quot;barber&quot;:&quot;💈&quot;,&quot;syringe&quot;:&quot;💉&quot;,&quot;pill&quot;:&quot;💊&quot;,&quot;kiss&quot;:&quot;💋&quot;,&quot;love_letter&quot;:&quot;💌&quot;,&quot;ring&quot;:&quot;💍&quot;,&quot;gem&quot;:&quot;💎&quot;,&quot;couplekiss&quot;:&quot;💏&quot;,&quot;bouquet&quot;:&quot;💐&quot;,&quot;couple_with_heart&quot;:&quot;💑&quot;,&quot;wedding&quot;:&quot;💒&quot;,&quot;heartbeat&quot;:&quot;💓&quot;,&quot;broken_heart&quot;:&quot;💔&quot;,&quot;two_hearts&quot;:&quot;💕&quot;,&quot;sparkling_heart&quot;:&quot;💖&quot;,&quot;heartpulse&quot;:&quot;💗&quot;,&quot;cupid&quot;:&quot;💘&quot;,&quot;blue_heart&quot;:&quot;💙&quot;,&quot;green_heart&quot;:&quot;💚&quot;,&quot;yellow_heart&quot;:&quot;💛&quot;,&quot;purple_heart&quot;:&quot;💜&quot;,&quot;gift_heart&quot;:&quot;💝&quot;,&quot;revolving_hearts&quot;:&quot;💞&quot;,&quot;heart_decoration&quot;:&quot;💟&quot;,&quot;diamond_shape_with_a_dot_inside&quot;:&quot;💠&quot;,&quot;bulb&quot;:&quot;💡&quot;,&quot;anger&quot;:&quot;💢&quot;,&quot;bomb&quot;:&quot;💣&quot;,&quot;zzz&quot;:&quot;💤&quot;,&quot;boom&quot;:&quot;💥&quot;,&quot;collision&quot;:&quot;💥&quot;,&quot;sweat_drops&quot;:&quot;💦&quot;,&quot;droplet&quot;:&quot;💧&quot;,&quot;dash&quot;:&quot;💨&quot;,&quot;hankey&quot;:&quot;💩&quot;,&quot;poop&quot;:&quot;💩&quot;,&quot;shit&quot;:&quot;💩&quot;,&quot;muscle&quot;:&quot;💪&quot;,&quot;dizzy&quot;:&quot;💫&quot;,&quot;speech_balloon&quot;:&quot;💬&quot;,&quot;thought_balloon&quot;:&quot;💭&quot;,&quot;white_flower&quot;:&quot;💮&quot;,&quot;moneybag&quot;:&quot;💰&quot;,&quot;currency_exchange&quot;:&quot;💱&quot;,&quot;heavy_dollar_sign&quot;:&quot;💲&quot;,&quot;credit_card&quot;:&quot;💳&quot;,&quot;yen&quot;:&quot;💴&quot;,&quot;dollar&quot;:&quot;💵&quot;,&quot;euro&quot;:&quot;💶&quot;,&quot;pound&quot;:&quot;💷&quot;,&quot;money_with_wings&quot;:&quot;💸&quot;,&quot;chart&quot;:&quot;💹&quot;,&quot;seat&quot;:&quot;💺&quot;,&quot;computer&quot;:&quot;💻&quot;,&quot;briefcase&quot;:&quot;💼&quot;,&quot;minidisc&quot;:&quot;💽&quot;,&quot;floppy_disk&quot;:&quot;💾&quot;,&quot;cd&quot;:&quot;💿&quot;,&quot;dvd&quot;:&quot;📀&quot;,&quot;file_folder&quot;:&quot;📁&quot;,&quot;open_file_folder&quot;:&quot;📂&quot;,&quot;page_with_curl&quot;:&quot;📃&quot;,&quot;page_facing_up&quot;:&quot;📄&quot;,&quot;date&quot;:&quot;📅&quot;,&quot;calendar&quot;:&quot;📆&quot;,&quot;card_index&quot;:&quot;📇&quot;,&quot;chart_with_upwards_trend&quot;:&quot;📈&quot;,&quot;chart_with_downwards_trend&quot;:&quot;📉&quot;,&quot;bar_chart&quot;:&quot;📊&quot;,&quot;clipboard&quot;:&quot;📋&quot;,&quot;pushpin&quot;:&quot;📌&quot;,&quot;round_pushpin&quot;:&quot;📍&quot;,&quot;paperclip&quot;:&quot;📎&quot;,&quot;straight_ruler&quot;:&quot;📏&quot;,&quot;triangular_ruler&quot;:&quot;📐&quot;,&quot;bookmark_tabs&quot;:&quot;📑&quot;,&quot;ledger&quot;:&quot;📒&quot;,&quot;notebook&quot;:&quot;📓&quot;,&quot;notebook_with_decorative_cover&quot;:&quot;📔&quot;,&quot;closed_book&quot;:&quot;📕&quot;,&quot;book&quot;:&quot;📖&quot;,&quot;open_book&quot;:&quot;📖&quot;,&quot;green_book&quot;:&quot;📗&quot;,&quot;blue_book&quot;:&quot;📘&quot;,&quot;orange_book&quot;:&quot;📙&quot;,&quot;books&quot;:&quot;📚&quot;,&quot;name_badge&quot;:&quot;📛&quot;,&quot;scroll&quot;:&quot;📜&quot;,&quot;memo&quot;:&quot;📝&quot;,&quot;pencil&quot;:&quot;📝&quot;,&quot;telephone_receiver&quot;:&quot;📞&quot;,&quot;pager&quot;:&quot;📟&quot;,&quot;fax&quot;:&quot;📠&quot;,&quot;satellite&quot;:&quot;🛰&quot;,&quot;loudspeaker&quot;:&quot;📢&quot;,&quot;mega&quot;:&quot;📣&quot;,&quot;outbox_tray&quot;:&quot;📤&quot;,&quot;inbox_tray&quot;:&quot;📥&quot;,&quot;package&quot;:&quot;📦&quot;,&quot;e-mail&quot;:&quot;📧&quot;,&quot;incoming_envelope&quot;:&quot;📨&quot;,&quot;envelope_with_arrow&quot;:&quot;📩&quot;,&quot;mailbox_closed&quot;:&quot;📪&quot;,&quot;mailbox&quot;:&quot;📫&quot;,&quot;mailbox_with_mail&quot;:&quot;📬&quot;,&quot;mailbox_with_no_mail&quot;:&quot;📭&quot;,&quot;postbox&quot;:&quot;📮&quot;,&quot;postal_horn&quot;:&quot;📯&quot;,&quot;newspaper&quot;:&quot;📰&quot;,&quot;iphone&quot;:&quot;📱&quot;,&quot;calling&quot;:&quot;📲&quot;,&quot;vibration_mode&quot;:&quot;📳&quot;,&quot;mobile_phone_off&quot;:&quot;📴&quot;,&quot;no_mobile_phones&quot;:&quot;📵&quot;,&quot;signal_strength&quot;:&quot;📶&quot;,&quot;camera&quot;:&quot;📷&quot;,&quot;camera_with_flash&quot;:&quot;📸&quot;,&quot;video_camera&quot;:&quot;📹&quot;,&quot;tv&quot;:&quot;📺&quot;,&quot;radio&quot;:&quot;📻&quot;,&quot;vhs&quot;:&quot;📼&quot;,&quot;film_projector&quot;:&quot;📽&quot;,&quot;prayer_beads&quot;:&quot;📿&quot;,&quot;twisted_rightwards_arrows&quot;:&quot;🔀&quot;,&quot;repeat&quot;:&quot;🔁&quot;,&quot;repeat_one&quot;:&quot;🔂&quot;,&quot;arrows_clockwise&quot;:&quot;🔃&quot;,&quot;arrows_counterclockwise&quot;:&quot;🔄&quot;,&quot;low_brightness&quot;:&quot;🔅&quot;,&quot;high_brightness&quot;:&quot;🔆&quot;,&quot;mute&quot;:&quot;🔇&quot;,&quot;speaker&quot;:&quot;🔈&quot;,&quot;sound&quot;:&quot;🔉&quot;,&quot;loud_sound&quot;:&quot;🔊&quot;,&quot;battery&quot;:&quot;🔋&quot;,&quot;electric_plug&quot;:&quot;🔌&quot;,&quot;mag&quot;:&quot;🔍&quot;,&quot;mag_right&quot;:&quot;🔎&quot;,&quot;lock_with_ink_pen&quot;:&quot;🔏&quot;,&quot;closed_lock_with_key&quot;:&quot;🔐&quot;,&quot;key&quot;:&quot;🔑&quot;,&quot;lock&quot;:&quot;🔒&quot;,&quot;unlock&quot;:&quot;🔓&quot;,&quot;bell&quot;:&quot;🔔&quot;,&quot;no_bell&quot;:&quot;🔕&quot;,&quot;bookmark&quot;:&quot;🔖&quot;,&quot;link&quot;:&quot;🔗&quot;,&quot;radio_button&quot;:&quot;🔘&quot;,&quot;back&quot;:&quot;🔙&quot;,&quot;end&quot;:&quot;🔚&quot;,&quot;on&quot;:&quot;🔛&quot;,&quot;soon&quot;:&quot;🔜&quot;,&quot;top&quot;:&quot;🔝&quot;,&quot;underage&quot;:&quot;🔞&quot;,&quot;keycap_ten&quot;:&quot;🔟&quot;,&quot;capital_abcd&quot;:&quot;🔠&quot;,&quot;abcd&quot;:&quot;🔡&quot;,&quot;symbols&quot;:&quot;🔣&quot;,&quot;abc&quot;:&quot;🔤&quot;,&quot;fire&quot;:&quot;🔥&quot;,&quot;flashlight&quot;:&quot;🔦&quot;,&quot;wrench&quot;:&quot;🔧&quot;,&quot;hammer&quot;:&quot;🔨&quot;,&quot;nut_and_bolt&quot;:&quot;🔩&quot;,&quot;hocho&quot;:&quot;🔪&quot;,&quot;knife&quot;:&quot;🔪&quot;,&quot;gun&quot;:&quot;🔫&quot;,&quot;microscope&quot;:&quot;🔬&quot;,&quot;telescope&quot;:&quot;🔭&quot;,&quot;crystal_ball&quot;:&quot;🔮&quot;,&quot;six_pointed_star&quot;:&quot;🔯&quot;,&quot;beginner&quot;:&quot;🔰&quot;,&quot;trident&quot;:&quot;🔱&quot;,&quot;black_square_button&quot;:&quot;🔲&quot;,&quot;white_square_button&quot;:&quot;🔳&quot;,&quot;red_circle&quot;:&quot;🔴&quot;,&quot;large_blue_circle&quot;:&quot;🔵&quot;,&quot;large_orange_diamond&quot;:&quot;🔶&quot;,&quot;large_blue_diamond&quot;:&quot;🔷&quot;,&quot;small_orange_diamond&quot;:&quot;🔸&quot;,&quot;small_blue_diamond&quot;:&quot;🔹&quot;,&quot;small_red_triangle&quot;:&quot;🔺&quot;,&quot;small_red_triangle_down&quot;:&quot;🔻&quot;,&quot;arrow_up_small&quot;:&quot;🔼&quot;,&quot;arrow_down_small&quot;:&quot;🔽&quot;,&quot;om_symbol&quot;:&quot;🕉&quot;,&quot;dove_of_peace&quot;:&quot;🕊&quot;,&quot;kaaba&quot;:&quot;🕋&quot;,&quot;mosque&quot;:&quot;🕌&quot;,&quot;synagogue&quot;:&quot;🕍&quot;,&quot;menorah_with_nine_branches&quot;:&quot;🕎&quot;,&quot;clock1&quot;:&quot;🕐&quot;,&quot;clock2&quot;:&quot;🕑&quot;,&quot;clock3&quot;:&quot;🕒&quot;,&quot;clock4&quot;:&quot;🕓&quot;,&quot;clock5&quot;:&quot;🕔&quot;,&quot;clock6&quot;:&quot;🕕&quot;,&quot;clock7&quot;:&quot;🕖&quot;,&quot;clock8&quot;:&quot;🕗&quot;,&quot;clock9&quot;:&quot;🕘&quot;,&quot;clock10&quot;:&quot;🕙&quot;,&quot;clock11&quot;:&quot;🕚&quot;,&quot;clock12&quot;:&quot;🕛&quot;,&quot;clock130&quot;:&quot;🕜&quot;,&quot;clock230&quot;:&quot;🕝&quot;,&quot;clock330&quot;:&quot;🕞&quot;,&quot;clock430&quot;:&quot;🕟&quot;,&quot;clock530&quot;:&quot;🕠&quot;,&quot;clock630&quot;:&quot;🕡&quot;,&quot;clock730&quot;:&quot;🕢&quot;,&quot;clock830&quot;:&quot;🕣&quot;,&quot;clock930&quot;:&quot;🕤&quot;,&quot;clock1030&quot;:&quot;🕥&quot;,&quot;clock1130&quot;:&quot;🕦&quot;,&quot;clock1230&quot;:&quot;🕧&quot;,&quot;candle&quot;:&quot;🕯&quot;,&quot;mantelpiece_clock&quot;:&quot;🕰&quot;,&quot;hole&quot;:&quot;🕳&quot;,&quot;man_in_business_suit_levitating&quot;:&quot;🕴&quot;,&quot;sleuth_or_spy&quot;:&quot;🕵&quot;,&quot;dark_sunglasses&quot;:&quot;🕶&quot;,&quot;spider&quot;:&quot;🕷&quot;,&quot;spider_web&quot;:&quot;🕸&quot;,&quot;joystick&quot;:&quot;🕹&quot;,&quot;linked_paperclips&quot;:&quot;🖇&quot;,&quot;lower_left_ballpoint_pen&quot;:&quot;🖊&quot;,&quot;lower_left_fountain_pen&quot;:&quot;🖋&quot;,&quot;lower_left_paintbrush&quot;:&quot;🖌&quot;,&quot;lower_left_crayon&quot;:&quot;🖍&quot;,&quot;raised_hand_with_fingers_splayed&quot;:&quot;🖐&quot;,&quot;middle_finger&quot;:&quot;🖕&quot;,&quot;reversed_hand_with_middle_finger_extended&quot;:&quot;🖕&quot;,&quot;spock-hand&quot;:&quot;🖖&quot;,&quot;desktop_computer&quot;:&quot;🖥&quot;,&quot;printer&quot;:&quot;🖨&quot;,&quot;three_button_mouse&quot;:&quot;🖱&quot;,&quot;trackball&quot;:&quot;🖲&quot;,&quot;frame_with_picture&quot;:&quot;🖼&quot;,&quot;card_index_dividers&quot;:&quot;🗂&quot;,&quot;card_file_box&quot;:&quot;🗃&quot;,&quot;file_cabinet&quot;:&quot;🗄&quot;,&quot;wastebasket&quot;:&quot;🗑&quot;,&quot;spiral_note_pad&quot;:&quot;🗒&quot;,&quot;spiral_calendar_pad&quot;:&quot;🗓&quot;,&quot;compression&quot;:&quot;🗜&quot;,&quot;old_key&quot;:&quot;🗝&quot;,&quot;rolled_up_newspaper&quot;:&quot;🗞&quot;,&quot;dagger_knife&quot;:&quot;🗡&quot;,&quot;speaking_head_in_silhouette&quot;:&quot;🗣&quot;,&quot;left_speech_bubble&quot;:&quot;🗨&quot;,&quot;right_anger_bubble&quot;:&quot;🗯&quot;,&quot;ballot_box_with_ballot&quot;:&quot;🗳&quot;,&quot;world_map&quot;:&quot;🗺&quot;,&quot;mount_fuji&quot;:&quot;🗻&quot;,&quot;tokyo_tower&quot;:&quot;🗼&quot;,&quot;statue_of_liberty&quot;:&quot;🗽&quot;,&quot;japan&quot;:&quot;🗾&quot;,&quot;moyai&quot;:&quot;🗿&quot;,&quot;grinning&quot;:&quot;😀&quot;,&quot;grin&quot;:&quot;😁&quot;,&quot;joy&quot;:&quot;😂&quot;,&quot;smiley&quot;:&quot;😃&quot;,&quot;smile&quot;:&quot;😄&quot;,&quot;sweat_smile&quot;:&quot;😅&quot;,&quot;laughing&quot;:&quot;😆&quot;,&quot;satisfied&quot;:&quot;😆&quot;,&quot;innocent&quot;:&quot;😇&quot;,&quot;smiling_imp&quot;:&quot;😈&quot;,&quot;wink&quot;:&quot;😉&quot;,&quot;blush&quot;:&quot;😊&quot;,&quot;yum&quot;:&quot;😋&quot;,&quot;relieved&quot;:&quot;😌&quot;,&quot;heart_eyes&quot;:&quot;😍&quot;,&quot;sunglasses&quot;:&quot;😎&quot;,&quot;smirk&quot;:&quot;😏&quot;,&quot;neutral_face&quot;:&quot;😐&quot;,&quot;expressionless&quot;:&quot;😑&quot;,&quot;unamused&quot;:&quot;😒&quot;,&quot;sweat&quot;:&quot;😓&quot;,&quot;pensive&quot;:&quot;😔&quot;,&quot;confused&quot;:&quot;😕&quot;,&quot;confounded&quot;:&quot;😖&quot;,&quot;kissing&quot;:&quot;😗&quot;,&quot;kissing_heart&quot;:&quot;😘&quot;,&quot;kissing_smiling_eyes&quot;:&quot;😙&quot;,&quot;kissing_closed_eyes&quot;:&quot;😚&quot;,&quot;stuck_out_tongue&quot;:&quot;😛&quot;,&quot;stuck_out_tongue_winking_eye&quot;:&quot;😜&quot;,&quot;stuck_out_tongue_closed_eyes&quot;:&quot;😝&quot;,&quot;disappointed&quot;:&quot;😞&quot;,&quot;worried&quot;:&quot;😟&quot;,&quot;angry&quot;:&quot;😠&quot;,&quot;rage&quot;:&quot;😡&quot;,&quot;cry&quot;:&quot;😢&quot;,&quot;persevere&quot;:&quot;😣&quot;,&quot;triumph&quot;:&quot;😤&quot;,&quot;disappointed_relieved&quot;:&quot;😥&quot;,&quot;frowning&quot;:&quot;😦&quot;,&quot;anguished&quot;:&quot;😧&quot;,&quot;fearful&quot;:&quot;😨&quot;,&quot;weary&quot;:&quot;😩&quot;,&quot;sleepy&quot;:&quot;😪&quot;,&quot;tired_face&quot;:&quot;😫&quot;,&quot;grimacing&quot;:&quot;😬&quot;,&quot;sob&quot;:&quot;😭&quot;,&quot;open_mouth&quot;:&quot;😮&quot;,&quot;hushed&quot;:&quot;😯&quot;,&quot;cold_sweat&quot;:&quot;😰&quot;,&quot;scream&quot;:&quot;😱&quot;,&quot;astonished&quot;:&quot;😲&quot;,&quot;flushed&quot;:&quot;😳&quot;,&quot;sleeping&quot;:&quot;😴&quot;,&quot;dizzy_face&quot;:&quot;😵&quot;,&quot;no_mouth&quot;:&quot;😶&quot;,&quot;mask&quot;:&quot;😷&quot;,&quot;smile_cat&quot;:&quot;😸&quot;,&quot;joy_cat&quot;:&quot;😹&quot;,&quot;smiley_cat&quot;:&quot;😺&quot;,&quot;heart_eyes_cat&quot;:&quot;😻&quot;,&quot;smirk_cat&quot;:&quot;😼&quot;,&quot;kissing_cat&quot;:&quot;😽&quot;,&quot;pouting_cat&quot;:&quot;😾&quot;,&quot;crying_cat_face&quot;:&quot;😿&quot;,&quot;scream_cat&quot;:&quot;🙀&quot;,&quot;slightly_frowning_face&quot;:&quot;🙁&quot;,&quot;slightly_smiling_face&quot;:&quot;🙂&quot;,&quot;upside_down_face&quot;:&quot;🙃&quot;,&quot;face_with_rolling_eyes&quot;:&quot;🙄&quot;,&quot;no_good&quot;:&quot;🙅&quot;,&quot;ok_woman&quot;:&quot;🙆&quot;,&quot;bow&quot;:&quot;🙇&quot;,&quot;see_no_evil&quot;:&quot;🙈&quot;,&quot;hear_no_evil&quot;:&quot;🙉&quot;,&quot;speak_no_evil&quot;:&quot;🙊&quot;,&quot;raising_hand&quot;:&quot;🙋&quot;,&quot;raised_hands&quot;:&quot;🙌&quot;,&quot;person_frowning&quot;:&quot;🙍&quot;,&quot;person_with_pouting_face&quot;:&quot;🙎&quot;,&quot;pray&quot;:&quot;🙏&quot;,&quot;rocket&quot;:&quot;🚀&quot;,&quot;helicopter&quot;:&quot;🚁&quot;,&quot;steam_locomotive&quot;:&quot;🚂&quot;,&quot;railway_car&quot;:&quot;🚃&quot;,&quot;bullettrain_side&quot;:&quot;🚄&quot;,&quot;bullettrain_front&quot;:&quot;🚅&quot;,&quot;train2&quot;:&quot;🚆&quot;,&quot;metro&quot;:&quot;🚇&quot;,&quot;light_rail&quot;:&quot;🚈&quot;,&quot;station&quot;:&quot;🚉&quot;,&quot;tram&quot;:&quot;🚊&quot;,&quot;train&quot;:&quot;🚋&quot;,&quot;bus&quot;:&quot;🚌&quot;,&quot;oncoming_bus&quot;:&quot;🚍&quot;,&quot;trolleybus&quot;:&quot;🚎&quot;,&quot;busstop&quot;:&quot;🚏&quot;,&quot;minibus&quot;:&quot;🚐&quot;,&quot;ambulance&quot;:&quot;🚑&quot;,&quot;fire_engine&quot;:&quot;🚒&quot;,&quot;police_car&quot;:&quot;🚓&quot;,&quot;oncoming_police_car&quot;:&quot;🚔&quot;,&quot;taxi&quot;:&quot;🚕&quot;,&quot;oncoming_taxi&quot;:&quot;🚖&quot;,&quot;car&quot;:&quot;🚗&quot;,&quot;red_car&quot;:&quot;🚗&quot;,&quot;oncoming_automobile&quot;:&quot;🚘&quot;,&quot;blue_car&quot;:&quot;🚙&quot;,&quot;truck&quot;:&quot;🚚&quot;,&quot;articulated_lorry&quot;:&quot;🚛&quot;,&quot;tractor&quot;:&quot;🚜&quot;,&quot;monorail&quot;:&quot;🚝&quot;,&quot;mountain_railway&quot;:&quot;🚞&quot;,&quot;suspension_railway&quot;:&quot;🚟&quot;,&quot;mountain_cableway&quot;:&quot;🚠&quot;,&quot;aerial_tramway&quot;:&quot;🚡&quot;,&quot;ship&quot;:&quot;🚢&quot;,&quot;rowboat&quot;:&quot;🚣&quot;,&quot;speedboat&quot;:&quot;🚤&quot;,&quot;traffic_light&quot;:&quot;🚥&quot;,&quot;vertical_traffic_light&quot;:&quot;🚦&quot;,&quot;construction&quot;:&quot;🚧&quot;,&quot;rotating_light&quot;:&quot;🚨&quot;,&quot;triangular_flag_on_post&quot;:&quot;🚩&quot;,&quot;door&quot;:&quot;🚪&quot;,&quot;no_entry_sign&quot;:&quot;🚫&quot;,&quot;smoking&quot;:&quot;🚬&quot;,&quot;no_smoking&quot;:&quot;🚭&quot;,&quot;put_litter_in_its_place&quot;:&quot;🚮&quot;,&quot;do_not_litter&quot;:&quot;🚯&quot;,&quot;potable_water&quot;:&quot;🚰&quot;,&quot;non-potable_water&quot;:&quot;🚱&quot;,&quot;bike&quot;:&quot;🚲&quot;,&quot;no_bicycles&quot;:&quot;🚳&quot;,&quot;bicyclist&quot;:&quot;🚴&quot;,&quot;mountain_bicyclist&quot;:&quot;🚵&quot;,&quot;walking&quot;:&quot;🚶&quot;,&quot;no_pedestrians&quot;:&quot;🚷&quot;,&quot;children_crossing&quot;:&quot;🚸&quot;,&quot;mens&quot;:&quot;🚹&quot;,&quot;womens&quot;:&quot;🚺&quot;,&quot;restroom&quot;:&quot;🚻&quot;,&quot;baby_symbol&quot;:&quot;🚼&quot;,&quot;toilet&quot;:&quot;🚽&quot;,&quot;wc&quot;:&quot;🚾&quot;,&quot;shower&quot;:&quot;🚿&quot;,&quot;bath&quot;:&quot;🛀&quot;,&quot;bathtub&quot;:&quot;🛁&quot;,&quot;passport_control&quot;:&quot;🛂&quot;,&quot;customs&quot;:&quot;🛃&quot;,&quot;baggage_claim&quot;:&quot;🛄&quot;,&quot;left_luggage&quot;:&quot;🛅&quot;,&quot;couch_and_lamp&quot;:&quot;🛋&quot;,&quot;sleeping_accommodation&quot;:&quot;🛌&quot;,&quot;shopping_bags&quot;:&quot;🛍&quot;,&quot;bellhop_bell&quot;:&quot;🛎&quot;,&quot;bed&quot;:&quot;🛏&quot;,&quot;place_of_worship&quot;:&quot;🛐&quot;,&quot;hammer_and_wrench&quot;:&quot;🛠&quot;,&quot;shield&quot;:&quot;🛡&quot;,&quot;oil_drum&quot;:&quot;🛢&quot;,&quot;motorway&quot;:&quot;🛣&quot;,&quot;railway_track&quot;:&quot;🛤&quot;,&quot;motor_boat&quot;:&quot;🛥&quot;,&quot;small_airplane&quot;:&quot;🛩&quot;,&quot;airplane_departure&quot;:&quot;🛫&quot;,&quot;airplane_arriving&quot;:&quot;🛬&quot;,&quot;passenger_ship&quot;:&quot;🛳&quot;,&quot;zipper_mouth_face&quot;:&quot;🤐&quot;,&quot;money_mouth_face&quot;:&quot;🤑&quot;,&quot;face_with_thermometer&quot;:&quot;🤒&quot;,&quot;nerd_face&quot;:&quot;🤓&quot;,&quot;thinking_face&quot;:&quot;🤔&quot;,&quot;face_with_head_bandage&quot;:&quot;🤕&quot;,&quot;robot_face&quot;:&quot;🤖&quot;,&quot;hugging_face&quot;:&quot;🤗&quot;,&quot;the_horns&quot;:&quot;🤘&quot;,&quot;sign_of_the_horns&quot;:&quot;🤘&quot;,&quot;crab&quot;:&quot;🦀&quot;,&quot;lion_face&quot;:&quot;🦁&quot;,&quot;scorpion&quot;:&quot;🦂&quot;,&quot;turkey&quot;:&quot;🦃&quot;,&quot;unicorn_face&quot;:&quot;🦄&quot;,&quot;cheese_wedge&quot;:&quot;🧀&quot;,&quot;hash&quot;:&quot;#️⃣&quot;,&quot;keycap_star&quot;:&quot;*⃣&quot;,&quot;zero&quot;:&quot;0️⃣&quot;,&quot;one&quot;:&quot;1️⃣&quot;,&quot;two&quot;:&quot;2️⃣&quot;,&quot;three&quot;:&quot;3️⃣&quot;,&quot;four&quot;:&quot;4️⃣&quot;,&quot;five&quot;:&quot;5️⃣&quot;,&quot;six&quot;:&quot;6️⃣&quot;,&quot;seven&quot;:&quot;7️⃣&quot;,&quot;eight&quot;:&quot;8️⃣&quot;,&quot;nine&quot;:&quot;9️⃣&quot;,&quot;flag-ac&quot;:&quot;🇦🇨&quot;,&quot;flag-ad&quot;:&quot;🇦🇩&quot;,&quot;flag-ae&quot;:&quot;🇦🇪&quot;,&quot;flag-af&quot;:&quot;🇦🇫&quot;,&quot;flag-ag&quot;:&quot;🇦🇬&quot;,&quot;flag-ai&quot;:&quot;🇦🇮&quot;,&quot;flag-al&quot;:&quot;🇦🇱&quot;,&quot;flag-am&quot;:&quot;🇦🇲&quot;,&quot;flag-ao&quot;:&quot;🇦🇴&quot;,&quot;flag-aq&quot;:&quot;🇦🇶&quot;,&quot;flag-ar&quot;:&quot;🇦🇷&quot;,&quot;flag-as&quot;:&quot;🇦🇸&quot;,&quot;flag-at&quot;:&quot;🇦🇹&quot;,&quot;flag-au&quot;:&quot;🇦🇺&quot;,&quot;flag-aw&quot;:&quot;🇦🇼&quot;,&quot;flag-ax&quot;:&quot;🇦🇽&quot;,&quot;flag-az&quot;:&quot;🇦🇿&quot;,&quot;flag-ba&quot;:&quot;🇧🇦&quot;,&quot;flag-bb&quot;:&quot;🇧🇧&quot;,&quot;flag-bd&quot;:&quot;🇧🇩&quot;,&quot;flag-be&quot;:&quot;🇧🇪&quot;,&quot;flag-bf&quot;:&quot;🇧🇫&quot;,&quot;flag-bg&quot;:&quot;🇧🇬&quot;,&quot;flag-bh&quot;:&quot;🇧🇭&quot;,&quot;flag-bi&quot;:&quot;🇧🇮&quot;,&quot;flag-bj&quot;:&quot;🇧🇯&quot;,&quot;flag-bl&quot;:&quot;🇧🇱&quot;,&quot;flag-bm&quot;:&quot;🇧🇲&quot;,&quot;flag-bn&quot;:&quot;🇧🇳&quot;,&quot;flag-bo&quot;:&quot;🇧🇴&quot;,&quot;flag-bq&quot;:&quot;🇧🇶&quot;,&quot;flag-br&quot;:&quot;🇧🇷&quot;,&quot;flag-bs&quot;:&quot;🇧🇸&quot;,&quot;flag-bt&quot;:&quot;🇧🇹&quot;,&quot;flag-bv&quot;:&quot;🇧🇻&quot;,&quot;flag-bw&quot;:&quot;🇧🇼&quot;,&quot;flag-by&quot;:&quot;🇧🇾&quot;,&quot;flag-bz&quot;:&quot;🇧🇿&quot;,&quot;flag-ca&quot;:&quot;🇨🇦&quot;,&quot;flag-cc&quot;:&quot;🇨🇨&quot;,&quot;flag-cd&quot;:&quot;🇨🇩&quot;,&quot;flag-cf&quot;:&quot;🇨🇫&quot;,&quot;flag-cg&quot;:&quot;🇨🇬&quot;,&quot;flag-ch&quot;:&quot;🇨🇭&quot;,&quot;flag-ci&quot;:&quot;🇨🇮&quot;,&quot;flag-ck&quot;:&quot;🇨🇰&quot;,&quot;flag-cl&quot;:&quot;🇨🇱&quot;,&quot;flag-cm&quot;:&quot;🇨🇲&quot;,&quot;flag-cn&quot;:&quot;🇨🇳&quot;,&quot;cn&quot;:&quot;🇨🇳&quot;,&quot;flag-co&quot;:&quot;🇨🇴&quot;,&quot;flag-cp&quot;:&quot;🇨🇵&quot;,&quot;flag-cr&quot;:&quot;🇨🇷&quot;,&quot;flag-cu&quot;:&quot;🇨🇺&quot;,&quot;flag-cv&quot;:&quot;🇨🇻&quot;,&quot;flag-cw&quot;:&quot;🇨🇼&quot;,&quot;flag-cx&quot;:&quot;🇨🇽&quot;,&quot;flag-cy&quot;:&quot;🇨🇾&quot;,&quot;flag-cz&quot;:&quot;🇨🇿&quot;,&quot;flag-de&quot;:&quot;🇩🇪&quot;,&quot;de&quot;:&quot;🇩🇪&quot;,&quot;flag-dg&quot;:&quot;🇩🇬&quot;,&quot;flag-dj&quot;:&quot;🇩🇯&quot;,&quot;flag-dk&quot;:&quot;🇩🇰&quot;,&quot;flag-dm&quot;:&quot;🇩🇲&quot;,&quot;flag-do&quot;:&quot;🇩🇴&quot;,&quot;flag-dz&quot;:&quot;🇩🇿&quot;,&quot;flag-ea&quot;:&quot;🇪🇦&quot;,&quot;flag-ec&quot;:&quot;🇪🇨&quot;,&quot;flag-ee&quot;:&quot;🇪🇪&quot;,&quot;flag-eg&quot;:&quot;🇪🇬&quot;,&quot;flag-eh&quot;:&quot;🇪🇭&quot;,&quot;flag-er&quot;:&quot;🇪🇷&quot;,&quot;flag-es&quot;:&quot;🇪🇸&quot;,&quot;es&quot;:&quot;🇪🇸&quot;,&quot;flag-et&quot;:&quot;🇪🇹&quot;,&quot;flag-eu&quot;:&quot;🇪🇺&quot;,&quot;flag-fi&quot;:&quot;🇫🇮&quot;,&quot;flag-fj&quot;:&quot;🇫🇯&quot;,&quot;flag-fk&quot;:&quot;🇫🇰&quot;,&quot;flag-fm&quot;:&quot;🇫🇲&quot;,&quot;flag-fo&quot;:&quot;🇫🇴&quot;,&quot;flag-fr&quot;:&quot;🇫🇷&quot;,&quot;fr&quot;:&quot;🇫🇷&quot;,&quot;flag-ga&quot;:&quot;🇬🇦&quot;,&quot;flag-gb&quot;:&quot;🇬🇧&quot;,&quot;gb&quot;:&quot;🇬🇧&quot;,&quot;uk&quot;:&quot;🇬🇧&quot;,&quot;flag-gd&quot;:&quot;🇬🇩&quot;,&quot;flag-ge&quot;:&quot;🇬🇪&quot;,&quot;flag-gf&quot;:&quot;🇬🇫&quot;,&quot;flag-gg&quot;:&quot;🇬🇬&quot;,&quot;flag-gh&quot;:&quot;🇬🇭&quot;,&quot;flag-gi&quot;:&quot;🇬🇮&quot;,&quot;flag-gl&quot;:&quot;🇬🇱&quot;,&quot;flag-gm&quot;:&quot;🇬🇲&quot;,&quot;flag-gn&quot;:&quot;🇬🇳&quot;,&quot;flag-gp&quot;:&quot;🇬🇵&quot;,&quot;flag-gq&quot;:&quot;🇬🇶&quot;,&quot;flag-gr&quot;:&quot;🇬🇷&quot;,&quot;flag-gs&quot;:&quot;🇬🇸&quot;,&quot;flag-gt&quot;:&quot;🇬🇹&quot;,&quot;flag-gu&quot;:&quot;🇬🇺&quot;,&quot;flag-gw&quot;:&quot;🇬🇼&quot;,&quot;flag-gy&quot;:&quot;🇬🇾&quot;,&quot;flag-hk&quot;:&quot;🇭🇰&quot;,&quot;flag-hm&quot;:&quot;🇭🇲&quot;,&quot;flag-hn&quot;:&quot;🇭🇳&quot;,&quot;flag-hr&quot;:&quot;🇭🇷&quot;,&quot;flag-ht&quot;:&quot;🇭🇹&quot;,&quot;flag-hu&quot;:&quot;🇭🇺&quot;,&quot;flag-ic&quot;:&quot;🇮🇨&quot;,&quot;flag-id&quot;:&quot;🇮🇩&quot;,&quot;flag-ie&quot;:&quot;🇮🇪&quot;,&quot;flag-il&quot;:&quot;🇮🇱&quot;,&quot;flag-im&quot;:&quot;🇮🇲&quot;,&quot;flag-in&quot;:&quot;🇮🇳&quot;,&quot;flag-io&quot;:&quot;🇮🇴&quot;,&quot;flag-iq&quot;:&quot;🇮🇶&quot;,&quot;flag-ir&quot;:&quot;🇮🇷&quot;,&quot;flag-is&quot;:&quot;🇮🇸&quot;,&quot;flag-it&quot;:&quot;🇮🇹&quot;,&quot;it&quot;:&quot;🇮🇹&quot;,&quot;flag-je&quot;:&quot;🇯🇪&quot;,&quot;flag-jm&quot;:&quot;🇯🇲&quot;,&quot;flag-jo&quot;:&quot;🇯🇴&quot;,&quot;flag-jp&quot;:&quot;🇯🇵&quot;,&quot;jp&quot;:&quot;🇯🇵&quot;,&quot;flag-ke&quot;:&quot;🇰🇪&quot;,&quot;flag-kg&quot;:&quot;🇰🇬&quot;,&quot;flag-kh&quot;:&quot;🇰🇭&quot;,&quot;flag-ki&quot;:&quot;🇰🇮&quot;,&quot;flag-km&quot;:&quot;🇰🇲&quot;,&quot;flag-kn&quot;:&quot;🇰🇳&quot;,&quot;flag-kp&quot;:&quot;🇰🇵&quot;,&quot;flag-kr&quot;:&quot;🇰🇷&quot;,&quot;kr&quot;:&quot;🇰🇷&quot;,&quot;flag-kw&quot;:&quot;🇰🇼&quot;,&quot;flag-ky&quot;:&quot;🇰🇾&quot;,&quot;flag-kz&quot;:&quot;🇰🇿&quot;,&quot;flag-la&quot;:&quot;🇱🇦&quot;,&quot;flag-lb&quot;:&quot;🇱🇧&quot;,&quot;flag-lc&quot;:&quot;🇱🇨&quot;,&quot;flag-li&quot;:&quot;🇱🇮&quot;,&quot;flag-lk&quot;:&quot;🇱🇰&quot;,&quot;flag-lr&quot;:&quot;🇱🇷&quot;,&quot;flag-ls&quot;:&quot;🇱🇸&quot;,&quot;flag-lt&quot;:&quot;🇱🇹&quot;,&quot;flag-lu&quot;:&quot;🇱🇺&quot;,&quot;flag-lv&quot;:&quot;🇱🇻&quot;,&quot;flag-ly&quot;:&quot;🇱🇾&quot;,&quot;flag-ma&quot;:&quot;🇲🇦&quot;,&quot;flag-mc&quot;:&quot;🇲🇨&quot;,&quot;flag-md&quot;:&quot;🇲🇩&quot;,&quot;flag-me&quot;:&quot;🇲🇪&quot;,&quot;flag-mf&quot;:&quot;🇲🇫&quot;,&quot;flag-mg&quot;:&quot;🇲🇬&quot;,&quot;flag-mh&quot;:&quot;🇲🇭&quot;,&quot;flag-mk&quot;:&quot;🇲🇰&quot;,&quot;flag-ml&quot;:&quot;🇲🇱&quot;,&quot;flag-mm&quot;:&quot;🇲🇲&quot;,&quot;flag-mn&quot;:&quot;🇲🇳&quot;,&quot;flag-mo&quot;:&quot;🇲🇴&quot;,&quot;flag-mp&quot;:&quot;🇲🇵&quot;,&quot;flag-mq&quot;:&quot;🇲🇶&quot;,&quot;flag-mr&quot;:&quot;🇲🇷&quot;,&quot;flag-ms&quot;:&quot;🇲🇸&quot;,&quot;flag-mt&quot;:&quot;🇲🇹&quot;,&quot;flag-mu&quot;:&quot;🇲🇺&quot;,&quot;flag-mv&quot;:&quot;🇲🇻&quot;,&quot;flag-mw&quot;:&quot;🇲🇼&quot;,&quot;flag-mx&quot;:&quot;🇲🇽&quot;,&quot;flag-my&quot;:&quot;🇲🇾&quot;,&quot;flag-mz&quot;:&quot;🇲🇿&quot;,&quot;flag-na&quot;:&quot;🇳🇦&quot;,&quot;flag-nc&quot;:&quot;🇳🇨&quot;,&quot;flag-ne&quot;:&quot;🇳🇪&quot;,&quot;flag-nf&quot;:&quot;🇳🇫&quot;,&quot;flag-ng&quot;:&quot;🇳🇬&quot;,&quot;flag-ni&quot;:&quot;🇳🇮&quot;,&quot;flag-nl&quot;:&quot;🇳🇱&quot;,&quot;flag-no&quot;:&quot;🇳🇴&quot;,&quot;flag-np&quot;:&quot;🇳🇵&quot;,&quot;flag-nr&quot;:&quot;🇳🇷&quot;,&quot;flag-nu&quot;:&quot;🇳🇺&quot;,&quot;flag-nz&quot;:&quot;🇳🇿&quot;,&quot;flag-om&quot;:&quot;🇴🇲&quot;,&quot;flag-pa&quot;:&quot;🇵🇦&quot;,&quot;flag-pe&quot;:&quot;🇵🇪&quot;,&quot;flag-pf&quot;:&quot;🇵🇫&quot;,&quot;flag-pg&quot;:&quot;🇵🇬&quot;,&quot;flag-ph&quot;:&quot;🇵🇭&quot;,&quot;flag-pk&quot;:&quot;🇵🇰&quot;,&quot;flag-pl&quot;:&quot;🇵🇱&quot;,&quot;flag-pm&quot;:&quot;🇵🇲&quot;,&quot;flag-pn&quot;:&quot;🇵🇳&quot;,&quot;flag-pr&quot;:&quot;🇵🇷&quot;,&quot;flag-ps&quot;:&quot;🇵🇸&quot;,&quot;flag-pt&quot;:&quot;🇵🇹&quot;,&quot;flag-pw&quot;:&quot;🇵🇼&quot;,&quot;flag-py&quot;:&quot;🇵🇾&quot;,&quot;flag-qa&quot;:&quot;🇶🇦&quot;,&quot;flag-re&quot;:&quot;🇷🇪&quot;,&quot;flag-ro&quot;:&quot;🇷🇴&quot;,&quot;flag-rs&quot;:&quot;🇷🇸&quot;,&quot;flag-ru&quot;:&quot;🇷🇺&quot;,&quot;ru&quot;:&quot;🇷🇺&quot;,&quot;flag-rw&quot;:&quot;🇷🇼&quot;,&quot;flag-sa&quot;:&quot;🇸🇦&quot;,&quot;flag-sb&quot;:&quot;🇸🇧&quot;,&quot;flag-sc&quot;:&quot;🇸🇨&quot;,&quot;flag-sd&quot;:&quot;🇸🇩&quot;,&quot;flag-se&quot;:&quot;🇸🇪&quot;,&quot;flag-sg&quot;:&quot;🇸🇬&quot;,&quot;flag-sh&quot;:&quot;🇸🇭&quot;,&quot;flag-si&quot;:&quot;🇸🇮&quot;,&quot;flag-sj&quot;:&quot;🇸🇯&quot;,&quot;flag-sk&quot;:&quot;🇸🇰&quot;,&quot;flag-sl&quot;:&quot;🇸🇱&quot;,&quot;flag-sm&quot;:&quot;🇸🇲&quot;,&quot;flag-sn&quot;:&quot;🇸🇳&quot;,&quot;flag-so&quot;:&quot;🇸🇴&quot;,&quot;flag-sr&quot;:&quot;🇸🇷&quot;,&quot;flag-ss&quot;:&quot;🇸🇸&quot;,&quot;flag-st&quot;:&quot;🇸🇹&quot;,&quot;flag-sv&quot;:&quot;🇸🇻&quot;,&quot;flag-sx&quot;:&quot;🇸🇽&quot;,&quot;flag-sy&quot;:&quot;🇸🇾&quot;,&quot;flag-sz&quot;:&quot;🇸🇿&quot;,&quot;flag-ta&quot;:&quot;🇹🇦&quot;,&quot;flag-tc&quot;:&quot;🇹🇨&quot;,&quot;flag-td&quot;:&quot;🇹🇩&quot;,&quot;flag-tf&quot;:&quot;🇹🇫&quot;,&quot;flag-tg&quot;:&quot;🇹🇬&quot;,&quot;flag-th&quot;:&quot;🇹🇭&quot;,&quot;flag-tj&quot;:&quot;🇹🇯&quot;,&quot;flag-tk&quot;:&quot;🇹🇰&quot;,&quot;flag-tl&quot;:&quot;🇹🇱&quot;,&quot;flag-tm&quot;:&quot;🇹🇲&quot;,&quot;flag-tn&quot;:&quot;🇹🇳&quot;,&quot;flag-to&quot;:&quot;🇹🇴&quot;,&quot;flag-tr&quot;:&quot;🇹🇷&quot;,&quot;flag-tt&quot;:&quot;🇹🇹&quot;,&quot;flag-tv&quot;:&quot;🇹🇻&quot;,&quot;flag-tw&quot;:&quot;🇹🇼&quot;,&quot;flag-tz&quot;:&quot;🇹🇿&quot;,&quot;flag-ua&quot;:&quot;🇺🇦&quot;,&quot;flag-ug&quot;:&quot;🇺🇬&quot;,&quot;flag-um&quot;:&quot;🇺🇲&quot;,&quot;flag-us&quot;:&quot;🇺🇸&quot;,&quot;us&quot;:&quot;🇺🇸&quot;,&quot;flag-uy&quot;:&quot;🇺🇾&quot;,&quot;flag-uz&quot;:&quot;🇺🇿&quot;,&quot;flag-va&quot;:&quot;🇻🇦&quot;,&quot;flag-vc&quot;:&quot;🇻🇨&quot;,&quot;flag-ve&quot;:&quot;🇻🇪&quot;,&quot;flag-vg&quot;:&quot;🇻🇬&quot;,&quot;flag-vi&quot;:&quot;🇻🇮&quot;,&quot;flag-vn&quot;:&quot;🇻🇳&quot;,&quot;flag-vu&quot;:&quot;🇻🇺&quot;,&quot;flag-wf&quot;:&quot;🇼🇫&quot;,&quot;flag-ws&quot;:&quot;🇼🇸&quot;,&quot;flag-xk&quot;:&quot;🇽🇰&quot;,&quot;flag-ye&quot;:&quot;🇾🇪&quot;,&quot;flag-yt&quot;:&quot;🇾🇹&quot;,&quot;flag-za&quot;:&quot;🇿🇦&quot;,&quot;flag-zm&quot;:&quot;🇿🇲&quot;,&quot;flag-zw&quot;:&quot;🇿🇼&quot;,&quot;man-man-boy&quot;:&quot;👨‍👨‍👦&quot;,&quot;man-man-boy-boy&quot;:&quot;👨‍👨‍👦‍👦&quot;,&quot;man-man-girl&quot;:&quot;👨‍👨‍👧&quot;,&quot;man-man-girl-boy&quot;:&quot;👨‍👨‍👧‍👦&quot;,&quot;man-man-girl-girl&quot;:&quot;👨‍👨‍👧‍👧&quot;,&quot;man-woman-boy-boy&quot;:&quot;👨‍👩‍👦‍👦&quot;,&quot;man-woman-girl&quot;:&quot;👨‍👩‍👧&quot;,&quot;man-woman-girl-boy&quot;:&quot;👨‍👩‍👧‍👦&quot;,&quot;man-woman-girl-girl&quot;:&quot;👨‍👩‍👧‍👧&quot;,&quot;man-heart-man&quot;:&quot;👨‍❤️‍👨&quot;,&quot;man-kiss-man&quot;:&quot;👨‍❤️‍💋‍👨&quot;,&quot;woman-woman-boy&quot;:&quot;👩‍👩‍👦&quot;,&quot;woman-woman-boy-boy&quot;:&quot;👩‍👩‍👦‍👦&quot;,&quot;woman-woman-girl&quot;:&quot;👩‍👩‍👧&quot;,&quot;woman-woman-girl-boy&quot;:&quot;👩‍👩‍👧‍👦&quot;,&quot;woman-woman-girl-girl&quot;:&quot;👩‍👩‍👧‍👧&quot;,&quot;woman-heart-woman&quot;:&quot;👩‍❤️‍👩&quot;,&quot;woman-kiss-woman&quot;:&quot;👩‍❤️‍💋‍👩&quot;}</td>
+      </tr>
+</table>
+
+  </div>
+
+</div>
+
+<button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="hidden">Jump to Line</button>
+<div id="jump-to-line" style="display:none">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+    <button type="submit" class="btn">Go</button>
+</form></div>
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+
+    </div>
+  </div>
+
+    </div>
+
+        <div class="container site-footer-container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2016 <span title="0.11615s from github-fe143-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+
+    <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+      </button>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      
+      <script crossorigin="anonymous" integrity="sha256-FJ2TOMJmUXKHCCXHj6SP3MpNQx0GfL9f2nEg2eOcxzg=" src="https://assets-cdn.github.com/assets/frameworks-149d9338c2665172870825c78fa48fdcca4d431d067cbf5fda7120d9e39cc738.js"></script>
+      <script async="async" crossorigin="anonymous" integrity="sha256-8AT3Da9pKWsQ00MZty6sAr6TEAEYBPZ4SY1p5bU5V+s=" src="https://assets-cdn.github.com/assets/github-f004f70daf69296b10d34319b72eac02be9310011804f678498d69e5b53957eb.js"></script>
+      
+      
+      
+      
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+    <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+    </button>
+  </div>
+</div>
+
+  </body>
+</html>
+

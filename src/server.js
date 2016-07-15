@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const port = 3000
-import { encode } from 'lg-emoji-mellow-coatimundi'
+import { encode } from 'emoji-cipher-lg-mc'
 
 let path = require('path')
 
