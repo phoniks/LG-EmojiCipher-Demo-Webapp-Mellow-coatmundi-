@@ -6,16 +6,26 @@ let path = require('path')
 
 app.set('port', (process.env.PORT || 3000));
 
-app.get('/', (request, response) => {
-  response.sendFile(path.join(__dirname, '/views/index.html'))
+var bodyParser = require('body-parser')
+
+app.use( bodyParser.json() );       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+  extended: true
+})); 
+
+// build an API for encode and decode
+app.post('/api/encode', (request, response) => {
+  response.set({ 'content-type': 'text/plain; charset=utf-8' })
+  response.end(encode(request.body.input))
 })
 
 app.get('/temp', (request, response) => {
+  response.set({ 'content-type': 'text/html; charset=utf-8' })
   response.end(encode('hello'))
 })
 
 app.use(
-  '/public', express.static(path.join(__dirname, '/public'))
+  express.static(path.join(__dirname, '/public'))
 )
 
 app.listen(app.get('port'), (err) => {
@@ -25,5 +35,4 @@ app.listen(app.get('port'), (err) => {
 
   console.log(`server is listening on ${app.get('port')}`)
 })
-
 

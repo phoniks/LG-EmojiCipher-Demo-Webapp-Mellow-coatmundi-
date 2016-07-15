@@ -1,16 +1,16 @@
 body {
-  background-color: gray;
-  background-image: url('http://laughingsquid.com/wp-content/uploads/2015/08/Great-Wave-off-Kanagawa-Emoji-Mosaic.png?w=750');
+  background-color: #dddddd;
 }
 .yellow {
   background-color: yellow;
 }
 
-.container {
-  align: center;
-  width: 300px;
-  height: 500px;
-  margin: auto;
+#alpha-input, #emoji-container {
+  float: left;
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  font-size: 140%;
   background-color: white;
   border: 1px solid red;
 }
@@ -25,5 +25,5 @@ body {
 }
 
 .input {
-  
+ width: 100%; 
 }

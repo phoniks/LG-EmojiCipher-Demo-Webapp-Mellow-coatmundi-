@@ -10,15 +10,25 @@ var path = require('path');
 
 app.set('port', process.env.PORT || 3000);
 
-app.get('/', function (request, response) {
-  response.sendFile(path.join(__dirname, '/views/index.html'));
+var bodyParser = require('body-parser');
+
+app.use(bodyParser.json()); // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
+  extended: true
+}));
+
+// build an API for encode and decode
+app.post('/api/encode', function (request, response) {
+  response.set({ 'content-type': 'text/plain; charset=utf-8' });
+  response.end((0, _emojiCipherLgMc.encode)(request.body.input));
 });
 
 app.get('/temp', function (request, response) {
+  response.set({ 'content-type': 'text/html; charset=utf-8' });
   response.end((0, _emojiCipherLgMc.encode)('hello'));
 });
 
-app.use('/public', express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, '/public')));
 
 app.listen(app.get('port'), function (err) {
   if (err) {
