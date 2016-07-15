@@ -23,9 +23,9 @@ app.post('/api/encode', function (request, response) {
   response.end((0, _emojiCipherLgMc.encode)(request.body.input));
 });
 
-app.get('/temp', function (request, response) {
-  response.set({ 'content-type': 'text/html; charset=utf-8' });
-  response.end((0, _emojiCipherLgMc.encode)('hello'));
+app.post('/api/decode', function (request, response) {
+  response.set({ 'content-type': 'text/plain; charset=utf-8' });
+  response.end((0, _emojiCipherLgMc.decode)(request.body.input));
 });
 
 app.use(express.static(path.join(__dirname, '/public')));

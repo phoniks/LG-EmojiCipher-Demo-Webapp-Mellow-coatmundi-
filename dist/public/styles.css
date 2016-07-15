@@ -1,16 +1,12 @@
 body {
   background-color: #dddddd;
 }
-.yellow {
-  background-color: yellow;
-}
 
-#alpha-input, #emoji-container {
-  float: left;
+#alpha-input, #emoji-input, #alpha-output, #emoji-output {
+  display: table-cell;
   width: 400px;
-  height: 400px;
+  height: 100px;
   margin: 20px;
-  font-size: 140%;
   background-color: white;
   border: 1px solid red;
 }
@@ -24,6 +20,11 @@ body {
   font: 25px Arial bold;
 }
 
-.input {
+input {
  width: 100%; 
+}
+
+.section {
+  display: table-row;
+  width: 100%;
 }

@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-import { encode } from 'emoji-cipher-lg-mc'
+import { encode, decode } from 'emoji-cipher-lg-mc'
 
 let path = require('path')
 
@@ -19,9 +19,9 @@ app.post('/api/encode', (request, response) => {
   response.end(encode(request.body.input))
 })
 
-app.get('/temp', (request, response) => {
-  response.set({ 'content-type': 'text/html; charset=utf-8' })
-  response.end(encode('hello'))
+app.post('/api/decode', (request, response) => {
+  response.set({ 'content-type': 'text/plain; charset=utf-8' })
+  response.end(decode(request.body.input))
 })
 
 app.use(
